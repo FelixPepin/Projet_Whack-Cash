@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Whack_Cash"
         mc:Ignorable="d"
-        Title="FenetreJouer" Height="450" Width="800">
+        Title="FenetreJouer" Height="450" Width="800"
+        KeyDown="Window_KeyDown"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBlock TextWrapping="Wrap" Margin="10,118,0,204" FontSize="60" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans le jeu"/></TextBlock>
 

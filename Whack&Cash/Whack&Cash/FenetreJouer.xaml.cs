@@ -22,6 +22,19 @@ namespace Whack_Cash
         public FenetreJouer()
         {
             InitializeComponent();
+            this.Focus();
+        }
+        /// <summary>
+        /// Permet de retourner au menu principale lorsqu'on clique sur ESC
+        /// </summary>
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                MainWindow menuPrincipale = new MainWindow();
+                menuPrincipale.Show();
+                this.Close();
+            }
         }
     }
 }

@@ -27,5 +27,38 @@ namespace Whack_Cash
             fenetreJouer.Show();
             this.Close();
         }
+
+        private void btn_connexion_Click(object sender, RoutedEventArgs e)
+        {
+            FenetreConnexion fenetreConnexion = new FenetreConnexion();
+            fenetreConnexion.Show();
+            this.Close();
+        }
+
+        private void btn_univers_Click(object sender, RoutedEventArgs e)
+        {
+            FenetreUnivers fenetreUnivers = new FenetreUnivers();
+            fenetreUnivers.Show();
+            this.Close();
+        }
+
+        private void btn_leaderboard_Click(object sender, RoutedEventArgs e)
+        {
+            FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard();
+            fenetreLeaderboard.Show();
+            this.Close();
+        }
+
+        private void btn_credits_Click(object sender, RoutedEventArgs e)
+        {
+            FenetreCredits fenetreCredits = new FenetreCredits();
+            fenetreCredits.Show();
+            this.Close();
+        }
+
+        private void btn_quitter_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

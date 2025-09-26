@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Whack_Cash"
         mc:Ignorable="d"
-        Title="FenetreUnivers" Height="450" Width="800">
+        Title="FenetreUnivers" Height="450" Width="800"
+        KeyDown="Window_KeyDown"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TextBlock TextWrapping="Wrap" Margin="0,118,-115,204" FontSize="52" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans Univers"/></TextBlock>
     </Grid>
 </Window>

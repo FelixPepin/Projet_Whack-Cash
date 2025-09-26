@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetreunivers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetreunivers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetreleaderboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetreleaderboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetrejouer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetrejouer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetrecredits.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetrecredits.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetreconnexion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetreconnexion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetreconnexion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetreconnexion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetrecredits.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetrecredits.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetrejouer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetrejouer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetreleaderboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetreleaderboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\fenetreunivers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\fenetreunivers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|d:\\whack \u0026 cash\\projet_whack-cash\\whack\u0026cash\\whack\u0026cash\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8473465-86C4-4922-A46B-B259FE36CEFE}|Whack\u0026Cash\\Whack\u0026Cash.csproj|solutionrelative:whack\u0026cash\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FenetreUnivers.xaml",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreUnivers.xaml",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreUnivers.xaml",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreUnivers.xaml",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreUnivers.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-26T19:58:00.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FenetreLeaderboard.xaml",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreLeaderboard.xaml",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreLeaderboard.xaml",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreLeaderboard.xaml",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreLeaderboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-26T19:57:55.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FenetreJouer.xaml",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreJouer.xaml",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreJouer.xaml",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreJouer.xaml",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreJouer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-26T19:57:51.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FenetreCredits.xaml",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreCredits.xaml",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreCredits.xaml",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreCredits.xaml",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreCredits.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-26T19:57:18.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FenetreUnivers.xaml.cs",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreUnivers.xaml.cs",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreUnivers.xaml.cs",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreUnivers.xaml.cs",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreUnivers.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:56:01.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FenetreLeaderboard.xaml.cs",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreLeaderboard.xaml.cs",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreLeaderboard.xaml.cs",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreLeaderboard.xaml.cs",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreLeaderboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:55:48.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FenetreJouer.xaml.cs",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreJouer.xaml.cs",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreJouer.xaml.cs",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreJouer.xaml.cs",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreJouer.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:55:34.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FenetreCredits.xaml.cs",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreCredits.xaml.cs",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreCredits.xaml.cs",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreCredits.xaml.cs",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreCredits.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:55:18.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\MainWindow.xaml",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\MainWindow.xaml*",
+              "RelativeToolTip": "Whack\u0026Cash\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-26T19:46:09.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FenetreConnexion.xaml",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreConnexion.xaml",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreConnexion.xaml",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreConnexion.xaml",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreConnexion.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-26T19:50:27.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FenetreConnexion.xaml.cs",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreConnexion.xaml.cs",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\FenetreConnexion.xaml.cs",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\FenetreConnexion.xaml.cs",
+              "RelativeToolTip": "Whack\u0026Cash\\FenetreConnexion.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:51:27.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Whack\u0026Cash\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Whack \u0026 Cash\\Projet_Whack-Cash\\Whack\u0026Cash\\Whack\u0026Cash\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Whack\u0026Cash\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAlwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:46:13.641Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

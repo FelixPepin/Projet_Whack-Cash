@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Whack & Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj": {}
+    "D:\\Whack & Cash\\Projet_Whack-Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj": {}
   },
   "projects": {
-    "D:\\Whack & Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj": {
+    "D:\\Whack & Cash\\Projet_Whack-Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Whack & Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj",
+        "projectUniqueName": "D:\\Whack & Cash\\Projet_Whack-Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj",
         "projectName": "Whack&Cash",
-        "projectPath": "D:\\Whack & Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj",
+        "projectPath": "D:\\Whack & Cash\\Projet_Whack-Cash\\Whack&Cash\\Whack&Cash\\Whack&Cash.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Whack & Cash\\Whack&Cash\\Whack&Cash\\obj\\",
+        "outputPath": "D:\\Whack & Cash\\Projet_Whack-Cash\\Whack&Cash\\Whack&Cash\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
