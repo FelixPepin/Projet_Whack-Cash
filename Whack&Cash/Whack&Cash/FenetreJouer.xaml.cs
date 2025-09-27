@@ -19,6 +19,7 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreJouer : Window
     {
+        private int compteur = 0;
         public FenetreJouer()
         {
             InitializeComponent();
@@ -33,19 +34,29 @@ namespace Whack_Cash
         /// <param name="e"></param>
         private void FenetreJouer_Loaded(object sender, RoutedEventArgs e)
         {
+
             LancementPartie();
         }
 
         /// <summary>
-        /// Permet de retourner au menu principale lorsqu'on clique sur ESC
+        /// Permet de faire apparaître un menu pause lorsque le joueur clic sur Echap
         /// </summary>
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
             {
-                MainWindow menuPrincipale = new MainWindow();
-                menuPrincipale.Show();
-                this.Close();
+                MessageBoxResult resultat = MessageBox.Show("Voulez vous quitter cette partie ? \nOui = Retour au menu principal" +
+                    "\nNon = Continuer la partie \nAnnuler = Retour au desktop", "Menu Pause", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                if (resultat == MessageBoxResult.Yes)
+                {
+                    MainWindow menuPrincipale = new MainWindow();
+                    menuPrincipale.Show();
+                    this.Close();
+                }
+                else if (resultat == MessageBoxResult.Cancel)
+                {
+                    this.Close();
+                }
             }
         }
         /// <summary>
@@ -91,6 +102,23 @@ namespace Whack_Cash
                     this.Close();
                 }
             }
+        }
+
+        private void btn_attaquer_Click(object sender, RoutedEventArgs e)
+        {
+            compteur++;
+
+            if (compteur % 10 == 0)
+            {
+                MessageBox.Show("Vous avez cliquer " + compteur + " fois sur le bouton Attaquer!");
+            }
+        }
+
+        private void btn_boutique_Click(object sender, RoutedEventArgs e)
+        {
+            FenetreBoutique boutique = new FenetreBoutique();
+            boutique.Owner = this;
+            boutique.ShowDialog();
         }
     }
 }

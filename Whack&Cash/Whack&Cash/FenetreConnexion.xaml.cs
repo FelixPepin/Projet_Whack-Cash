@@ -20,7 +20,6 @@ namespace Whack_Cash
     public partial class FenetreConnexion : Window
     {
         private static bool _sauvegarde;
-
         public static bool Sauvegarde { get => _sauvegarde; set => _sauvegarde = value; }
 
         public FenetreConnexion()
@@ -29,6 +28,7 @@ namespace Whack_Cash
             this.Focus();
             Sauvegarde = true;
         }
+
 
         /// <summary>
         /// Permet de retourner au menu principale lorsqu'on clique sur ESC

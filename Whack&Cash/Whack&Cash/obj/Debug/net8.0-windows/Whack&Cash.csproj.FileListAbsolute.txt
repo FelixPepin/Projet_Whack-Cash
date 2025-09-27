@@ -59,3 +59,12 @@ D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows
 D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\Whack&Cash.pdb
 D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\Whack&Cash.genruntimeconfig.cache
 D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\ref\Whack&Cash.dll
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\background.jpg
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\Whack&Cash_Content.g.cs
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_attaque.png
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_boutique.png
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\FenetreBoutique.g.cs
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\FenetreBoutique.baml
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_continuer.png
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_retour.png
+D:\Whack & Cash\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\retour_desktop.png

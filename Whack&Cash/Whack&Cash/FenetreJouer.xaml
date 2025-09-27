@@ -9,7 +9,29 @@
         KeyDown="Window_KeyDown"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock TextWrapping="Wrap" Margin="10,118,0,204" FontSize="60" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans le jeu"/></TextBlock>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/background.jpg"/>
+        </Grid.Background>
+        <Image Source="/Images/btn_attaque.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="268,323,326,0" />
+        <Button x:Name="btn_attaquer" HorizontalAlignment="Left" Margin="286,365,0,0" VerticalAlignment="Top" Width="163" Height="42" Click="btn_attaquer_Click" OverridesDefaultStyle="True"
+                Focusable="False">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Images/btn_boutique.png" Stretch="Fill" VerticalAlignment="Top" Height="122" Margin="597,0,0,0"/>
+        <Button x:Name="btn_boutique" HorizontalAlignment="Left" Margin="614,44,0,0" VerticalAlignment="Top" Width="163" Height="40" OverridesDefaultStyle="True" Focusable="False" Click="btn_boutique_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>
