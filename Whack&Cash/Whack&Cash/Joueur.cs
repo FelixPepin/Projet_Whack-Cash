@@ -17,7 +17,7 @@ namespace Whack_Cash
         // public List<ItemPermanent> LesItemsPermanents { get => _lesItemsPermanents; set => _lesItemsPermanents = value; }
         public Joueur()
         {
-            DegatAttaque = 0;
+            DegatAttaque = 1;
         }
 
     }

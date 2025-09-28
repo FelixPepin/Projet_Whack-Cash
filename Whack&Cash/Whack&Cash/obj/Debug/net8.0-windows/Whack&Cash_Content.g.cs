@@ -13,6 +13,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_boutique.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_continuer.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_retour.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/marine.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/retour_desktop.png")]
 
 

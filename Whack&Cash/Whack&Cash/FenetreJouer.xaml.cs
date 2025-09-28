@@ -20,12 +20,15 @@ namespace Whack_Cash
     public partial class FenetreJouer : Window
     {
         private int compteur = 0;
+        List<Ennemi> lesEnnemis = new List<Ennemi>();
+        Joueur joueur = new Joueur();
         public FenetreJouer()
         {
             InitializeComponent();
             this.Focus();
             this.Loaded += FenetreJouer_Loaded;
-            
+            lesEnnemis.Add(new Ennemi(100,"Marine", new BitmapImage(new Uri("Images/marine.png", UriKind.Relative))));
+            faireApparaitreEnnemi(lesEnnemis[0]);
         }
         /// <summary>
         /// Fonction qui se lance quand la page fini de load.
@@ -103,22 +106,36 @@ namespace Whack_Cash
                 }
             }
         }
-
+        /// <summary>
+        /// Code pour le bouton Attaquer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_attaquer_Click(object sender, RoutedEventArgs e)
         {
             compteur++;
-
+            barreDeVie.Value -= joueur.DegatAttaque;
             if (compteur % 10 == 0)
             {
                 MessageBox.Show("Vous avez cliquer " + compteur + " fois sur le bouton Attaquer!");
             }
         }
-
+        /// <summary>
+        /// La boutique s'ouvre lorsqu'on clique sur le bouton boutique
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_boutique_Click(object sender, RoutedEventArgs e)
         {
             FenetreBoutique boutique = new FenetreBoutique();
             boutique.Owner = this;
             boutique.ShowDialog();
+        }
+        private void faireApparaitreEnnemi(Ennemi ennemi)
+        {
+            img_ennemi.Source = ennemi.CheminVersImageEnnemi;
+            barreDeVie.Maximum = ennemi.PtsVie;
+            barreDeVie.Value = ennemi.PtsVie;
         }
     }
 }

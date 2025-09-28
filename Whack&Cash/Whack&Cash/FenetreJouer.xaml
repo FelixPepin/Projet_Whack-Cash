@@ -13,8 +13,8 @@
             <ImageBrush ImageSource="Images/background.jpg"/>
         </Grid.Background>
         <Image Source="/Images/btn_attaque.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="268,323,326,0" />
-        <Button x:Name="btn_attaquer" HorizontalAlignment="Left" Margin="286,365,0,0" VerticalAlignment="Top" Width="163" Height="42" Click="btn_attaquer_Click" OverridesDefaultStyle="True"
-                Focusable="False">
+        <Button x:Name="btn_attaquer" HorizontalAlignment="Left" Margin="286,365,0,0" VerticalAlignment="Top" Width="163" Height="42" Click="btn_attaquer_Click" OverridesDefaultStyle="True" 
+                Background="Transparent" Focusable="False">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}">
@@ -24,7 +24,8 @@
             </Button.Template>
         </Button>
         <Image Source="/Images/btn_boutique.png" Stretch="Fill" VerticalAlignment="Top" Height="122" Margin="597,0,0,0"/>
-        <Button x:Name="btn_boutique" HorizontalAlignment="Left" Margin="614,44,0,0" VerticalAlignment="Top" Width="163" Height="40" OverridesDefaultStyle="True" Focusable="False" Click="btn_boutique_Click">
+        <Button x:Name="btn_boutique" HorizontalAlignment="Left" Margin="614,44,0,0" VerticalAlignment="Top" Width="163" Height="40" OverridesDefaultStyle="True" Focusable="False" 
+                Click="btn_boutique_Click" Background="Transparent">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}">
@@ -33,5 +34,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Image x:Name="img_ennemi" Margin="193,109,249,83"/>
+        <ProgressBar x:Name="barreDeVie" HorizontalAlignment="Left" Height="40" Margin="278,61,0,0" VerticalAlignment="Top" Width="200" Background="Gray"/>
     </Grid>
 </Window>
