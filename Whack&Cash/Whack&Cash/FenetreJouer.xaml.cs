@@ -19,16 +19,24 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreJouer : Window
     {
-        private int compteur = 0;
-        List<Ennemi> lesEnnemis = new List<Ennemi>();
-        Joueur joueur = new Joueur();
+        private int numEnnemi = 0;
+        private List<Ennemi> lesEnnemis = new List<Ennemi>();
+        private Joueur leJoueur = new Joueur(0, 0, 0, 0);
+
+        internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
+
         public FenetreJouer()
         {
             InitializeComponent();
             this.Focus();
             this.Loaded += FenetreJouer_Loaded;
-            lesEnnemis.Add(new Ennemi(100,"Marine", new BitmapImage(new Uri("Images/marine.png", UriKind.Relative))));
-            faireApparaitreEnnemi(lesEnnemis[0]);
+            lesEnnemis.Add(new Ennemi(2, "Marine", "Images/marine.png", 100));
+            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
+            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
+            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
+            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
+
+            FaireApparaitreEnnemi(lesEnnemis[0]);
         }
         /// <summary>
         /// Fonction qui se lance quand la page fini de load.
@@ -69,8 +77,8 @@ namespace Whack_Cash
         {
             // Si une sauvegarde existe, on demande au joueur si il veut continuer sa partie,
             // commencer une nouvelle partie ou retourner au menu.
-            if (FenetreConnexion.Sauvegarde == true) 
-            { 
+            if (FenetreConnexion.Sauvegarde == true)
+            {
                 MessageBoxResult resultat = MessageBox.Show("Voulez vous continuer votre partie ?\nOui = Continuer" +
                     "\nNon = Nouvelle Partie\nAnnuler = Retour au menu", "Continuer ou Nouvelle Partie", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
                 if (resultat == MessageBoxResult.Yes)
@@ -113,11 +121,32 @@ namespace Whack_Cash
         /// <param name="e"></param>
         private void btn_attaquer_Click(object sender, RoutedEventArgs e)
         {
-            compteur++;
-            barreDeVie.Value -= joueur.DegatAttaque;
-            if (compteur % 10 == 0)
+            barreDeVie.Value -= LeJoueur.DegatAttaque;
+            lesEnnemis[numEnnemi].PtsVie -= LeJoueur.DegatAttaque;
+
+            if (lesEnnemis[numEnnemi].PtsVie <= 0 & lesEnnemis.Count != (numEnnemi + 1))
             {
-                MessageBox.Show("Vous avez cliquer " + compteur + " fois sur le bouton Attaquer!");
+                LeJoueur.NbEnnemiTuerPartie++;
+                LeJoueur.ArgentDansPartie += lesEnnemis[numEnnemi].Recompense;
+                txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
+                numEnnemi++;
+                FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
+            }
+            else if (lesEnnemis[numEnnemi].PtsVie <= 0 & lesEnnemis.Count == numEnnemi + 1)
+            {
+                LeJoueur.NbEnnemiTuerTotal += LeJoueur.NbEnnemiTuerPartie;
+                LeJoueur.ArgentTotal += LeJoueur.ArgentDansPartie;
+                MessageBoxResult resultat = MessageBox.Show("Vous avez terminer le jeu !\n Oui = Retour au menu" +
+                   "\n Non = Retour au desktop", "Fin De Partie", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (resultat == MessageBoxResult.Yes)
+                {
+                    MainWindow menuPrincipale = new MainWindow();
+                    menuPrincipale.Show();
+                    this.Close();
+                }
+                else
+                    this.Close();
+
             }
         }
         /// <summary>
@@ -129,13 +158,21 @@ namespace Whack_Cash
         {
             FenetreBoutique boutique = new FenetreBoutique();
             boutique.Owner = this;
+            boutique.LeJoueur = LeJoueur;
             boutique.ShowDialog();
         }
-        private void faireApparaitreEnnemi(Ennemi ennemi)
+        /// <summary>
+        /// Permet de faire apparaître un ennemi
+        /// </summary>
+        /// <param name="ennemi">L'ennemi à faire apparaître</param>
+        private void FaireApparaitreEnnemi(Ennemi ennemi)
         {
+
             img_ennemi.Source = ennemi.CheminVersImageEnnemi;
             barreDeVie.Maximum = ennemi.PtsVie;
             barreDeVie.Value = ennemi.PtsVie;
+
+
         }
     }
 }

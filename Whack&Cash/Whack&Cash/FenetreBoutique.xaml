@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Whack_Cash"
         mc:Ignorable="d"
-        Title="FenetreBoutique" Height="450" Width="800">
+        Title="FenetreBoutique" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock TextWrapping="Wrap" Margin="0,118,-115,204" FontSize="48" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans la Boutique !"/></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="401*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/boutique.png"/>
+        </Grid.Background>
+        <ListBox x:Name="lst_items" HorizontalAlignment="Left" Height="179" Margin="18,189,0,0" VerticalAlignment="Top" Width="301"/>
+        <Image Source="/Images/btn_acheter.png" Margin="-106,334,517,-50" Grid.RowSpan="2"/>
+        <Button x:Name="btn_acheter" HorizontalAlignment="Left" Margin="21,380,0,0" VerticalAlignment="Top" Width="142" Height="52" OverridesDefaultStyle="True" 
+        Background="Transparent" Focusable="False" Grid.RowSpan="2" Click="btn_acheter_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Images/btn_retour_boutique.png" Margin="36,327,353,-50" Grid.RowSpan="2"/>
+        <Button x:Name="btn_retour" HorizontalAlignment="Left" Margin="170,384,0,0" VerticalAlignment="Top" Width="142" Height="44" OverridesDefaultStyle="True" 
+            Background="Transparent" Focusable="False" Grid.RowSpan="2" Click="btn_retour_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,71 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreBoutique : Window
     {
+        private List<ItemPermanent> lesItemsPermanents;
+        private List<ItemTemporaire> lesItemsTemporaires;
+        private Joueur leJoueur;
+
+        internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
+
         public FenetreBoutique()
         {
             InitializeComponent();
+            ChargerListeItems();
+        }
+
+        private void btn_retour_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_acheter_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (lst_items.SelectedItem is ItemTemporaire)
+            {
+                ItemTemporaire itemAAcheter = (ItemTemporaire) lst_items.SelectedItem;
+                if (itemAAcheter.Prix > LeJoueur.ArgentDansPartie)
+                {
+                    MessageBox.Show("Vous n'avez pas assez d'argent pour acheter l'item"
+                        , "Manque d'argent", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else if (LeJoueur.ItemTemporaire is not null)
+                {
+                    MessageBox.Show("Vous possédez déjà un item temporaire"
+                        , "1 item temporaire max", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else
+                    LeJoueur.AjouterItemTemporaire(itemAAcheter);
+            }
+            else if (lst_items.SelectedItem is ItemPermanent)
+            {
+                ItemPermanent itemAAcheter = (ItemPermanent)lst_items.SelectedItem;
+                if (itemAAcheter.Prix > LeJoueur.ArgentDansPartie)
+                {
+                    MessageBox.Show("Vous n'avez pas assez d'argent pour acheter l'item"
+                        , "Manque d'argent", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
+                else
+                    LeJoueur.AjouterItemPermanent(itemAAcheter);
+            }
+        }
+
+        private void ChargerListeItems()
+        {
+            if (lesItemsPermanents == null && lesItemsTemporaires == null)
+            {
+                lesItemsPermanents = BD.ChargerItemPermanent();
+                lesItemsTemporaires = BD.ChargerItemTemporaire();
+                foreach (ItemTemporaire item in lesItemsTemporaires)
+                {
+                    lst_items.Items.Add(item);
+                }
+                foreach (ItemPermanent item in lesItemsPermanents)
+                {
+                    lst_items.Items.Add(item);
+                }
+            }
         }
     }
 }

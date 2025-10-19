@@ -10,17 +10,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\argent.png" />
     <None Remove="Images\background.jpg" />
+    <None Remove="Images\boutique.png" />
+    <None Remove="Images\btn_acheter.png" />
     <None Remove="Images\btn_attaque.png" />
     <None Remove="Images\btn_boutique.png" />
     <None Remove="Images\btn_continuer.png" />
     <None Remove="Images\btn_retour.png" />
+    <None Remove="Images\btn_retour_boutique.png" />
     <None Remove="Images\marine.png" />
+    <None Remove="Images\ninja.png" />
     <None Remove="Images\retour_desktop.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\argent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\boutique.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\btn_acheter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_attaque.png">
@@ -35,12 +49,22 @@
     <Content Include="Images\btn_retour.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\btn_retour_boutique.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\marine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ninja.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\retour_desktop.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
   </ItemGroup>
 
 </Project>

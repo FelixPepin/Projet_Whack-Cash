@@ -8,12 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/argent.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/background.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/boutique.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_acheter.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_attaque.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_boutique.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_continuer.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_retour.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_retour_boutique.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/marine.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ninja.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/retour_desktop.png")]
 
 

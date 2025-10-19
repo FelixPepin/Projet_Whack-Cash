@@ -5,27 +5,28 @@ using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace Whack_Cash
 {
     internal class Ennemi
     {
         private int _ptsVie;
-        private bool _vivant;
         private string _nom;
         private ImageSource _cheminVersImageEnnemi;
+        private int _recompense;
 
         public int PtsVie { get => _ptsVie; set => _ptsVie = value; }
-        public bool Vivant { get => _vivant; set => _vivant = value; }
         public string Nom { get => _nom; set => _nom = value; }
         public ImageSource CheminVersImageEnnemi { get => _cheminVersImageEnnemi; set => _cheminVersImageEnnemi = value; }
+        public int Recompense { get => _recompense; set => _recompense = value; }
 
-        public Ennemi(int ptsVie, string nom, ImageSource cheminVersImageEnnemi)
+        public Ennemi(int ptsVie, string nom, string cheminVersImageEnnemi, int recompense)
         {
             PtsVie = ptsVie;
-            Vivant = true;
             Nom = nom;
-            CheminVersImageEnnemi = cheminVersImageEnnemi;
+            CheminVersImageEnnemi = new BitmapImage(new Uri(cheminVersImageEnnemi, UriKind.Relative));
+            Recompense = recompense;
         }
     }
 }
