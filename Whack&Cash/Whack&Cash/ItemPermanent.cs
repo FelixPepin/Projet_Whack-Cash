@@ -31,7 +31,7 @@ namespace Whack_Cash
 
         public override string ToString()
         {
-            return $"{Nom,-15} {DegatSup,-10} {"-",-10} {Prix,-10} {Type,-10}";
+            return string.Format(Nom);
         }
     }
 }

@@ -86,5 +86,28 @@ namespace Whack_Cash
                 }
             }
         }
+
+        private void lst_items_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lst_items.SelectedItem is ItemTemporaire itemTemp)
+            {
+                MessageBox.Show(
+                    $"Nom : {itemTemp.Nom}\n" +
+                    $"Dégâts supplémentaires : {itemTemp.DegatSup}\n" +
+                    $"Nombre de tours : {itemTemp.NbDeTours}\n" +
+                    $"Prix : {itemTemp.Prix}$\n" +
+                    $"Type : {itemTemp.Type}",
+                    "Item temporaire");
+            }
+            else if (lst_items.SelectedItem is ItemPermanent itemPerm)
+            {
+                MessageBox.Show(
+                    $"Nom : {itemPerm.Nom}\n" +
+                    $"Dégâts supplémentaires : {itemPerm.DegatSup}\n" +
+                    $"Prix : {itemPerm.Prix}$\n" +
+                    $"Type : {itemPerm.Type}",
+                    "Item permanent");
+            }
+        }
     }
 }
