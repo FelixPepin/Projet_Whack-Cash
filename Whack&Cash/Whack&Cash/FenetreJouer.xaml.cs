@@ -30,8 +30,8 @@ namespace Whack_Cash
             InitializeComponent();
             this.Focus();
             this.Loaded += FenetreJouer_Loaded;
-            lesEnnemis.Add(new Ennemi(2, "Marine", "Images/marine.png", 100));
-            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
+            lesEnnemis.Add(new Ennemi(2, "Marine", "Images/marine.png", 10000));
+            lesEnnemis.Add(new Ennemi(5000, "Ninja", "Images/ninja.png", 200));
             lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
             lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
             lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
@@ -122,6 +122,7 @@ namespace Whack_Cash
         private void btn_attaquer_Click(object sender, RoutedEventArgs e)
         {
             barreDeVie.Value -= LeJoueur.DegatAttaque;
+            txtVie.Text = barreDeVie.Value + " / " + barreDeVie.Maximum;
             lesEnnemis[numEnnemi].PtsVie -= LeJoueur.DegatAttaque;
 
             if (lesEnnemis[numEnnemi].PtsVie <= 0 & lesEnnemis.Count != (numEnnemi + 1))
@@ -160,6 +161,8 @@ namespace Whack_Cash
             boutique.Owner = this;
             boutique.LeJoueur = LeJoueur;
             boutique.ShowDialog();
+
+            txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
         }
         /// <summary>
         /// Permet de faire apparaître un ennemi
@@ -171,6 +174,7 @@ namespace Whack_Cash
             img_ennemi.Source = ennemi.CheminVersImageEnnemi;
             barreDeVie.Maximum = ennemi.PtsVie;
             barreDeVie.Value = ennemi.PtsVie;
+            txtVie.Text = barreDeVie.Value + " / " + barreDeVie.Maximum;
 
 
         }

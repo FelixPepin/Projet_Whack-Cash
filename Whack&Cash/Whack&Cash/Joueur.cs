@@ -30,6 +30,7 @@ namespace Whack_Cash
             ArgentTotal = argentTotal;
             NbEnnemiTuerPartie = nbEnnemiTuerPartie;
             NbEnnemiTuerTotal = nbEnnemiTuerTotal;
+            LesItemsPermanents = new List<ItemPermanent>();
         }
 
         public void AjouterItemPermanent(ItemPermanent item)

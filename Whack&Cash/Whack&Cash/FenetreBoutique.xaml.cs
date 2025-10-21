@@ -65,8 +65,11 @@ namespace Whack_Cash
                         , "Manque d'argent", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
 
+                else if (leJoueur.LesItemsPermanents.Contains(lst_items.SelectedItem))
+                    MessageBox.Show("Vous possédez déjà cette item permanent"
+                        , "Manque d'argent", MessageBoxButton.OK, MessageBoxImage.Warning);
                 else
-                    LeJoueur.AjouterItemPermanent(itemAAcheter);
+                            LeJoueur.AjouterItemPermanent(itemAAcheter);
             }
         }
 
