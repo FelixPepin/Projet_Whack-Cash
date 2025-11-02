@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\archimage_renegat.png" />
     <None Remove="Images\argent.png" />
     <None Remove="Images\background.jpg" />
     <None Remove="Images\boutique.png" />
@@ -19,12 +20,32 @@
     <None Remove="Images\btn_continuer.png" />
     <None Remove="Images\btn_retour.png" />
     <None Remove="Images\btn_retour_boutique.png" />
+    <None Remove="Images\chevalier_noir.png" />
+    <None Remove="Images\colosse_meca.png" />
+    <None Remove="Images\dragon_ancestral.png" />
+    <None Remove="Images\eren.png" />
+    <None Remove="Images\garde_acier.png" />
+    <None Remove="Images\goku.png" />
+    <None Remove="Images\golem_basaltique.png" />
+    <None Remove="Images\gon.png" />
+    <None Remove="Images\ichigo.png" />
+    <None Remove="Images\killua.png" />
+    <None Remove="Images\korosensei.png" />
+    <None Remove="Images\loup_alpha.png" />
+    <None Remove="Images\luffy.png" />
+    <None Remove="Images\maraudeur.png" />
     <None Remove="Images\marine.png" />
+    <None Remove="Images\naruto.png" />
     <None Remove="Images\ninja.png" />
     <None Remove="Images\retour_desktop.png" />
+    <None Remove="Images\seigneur_troll.png" />
+    <None Remove="Images\spectre_vengeur.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\archimage_renegat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\argent.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -52,13 +73,64 @@
     <Content Include="Images\btn_retour_boutique.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\chevalier_noir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\colosse_meca.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dragon_ancestral.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\eren.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\garde_acier.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\goku.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\golem_basaltique.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\gon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ichigo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\killua.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\korosensei.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\loup_alpha.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\luffy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\maraudeur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\marine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\naruto.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\ninja.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\retour_desktop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\seigneur_troll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\spectre_vengeur.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

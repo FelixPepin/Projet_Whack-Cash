@@ -16,6 +16,10 @@ namespace Whack_Cash
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string _univers;
+
+        public string Univers { get => _univers; set => _univers = value; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -23,37 +27,45 @@ namespace Whack_Cash
 
         private void btn_jouer_Click(object sender, RoutedEventArgs e)
         {
-            FenetreJouer fenetreJouer = new FenetreJouer();
+            if (Univers == null)
+                Univers = "Fantaisie";
+            FenetreJouer fenetreJouer = new FenetreJouer(Univers);
             fenetreJouer.Show();
             this.Close();
         }
 
         private void btn_connexion_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
             FenetreConnexion fenetreConnexion = new FenetreConnexion();
-            fenetreConnexion.Show();
-            this.Close();
+            fenetreConnexion.ShowDialog();
+            this.Show();
+
         }
 
         private void btn_univers_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
             FenetreUnivers fenetreUnivers = new FenetreUnivers();
-            fenetreUnivers.Show();
-            this.Close();
+            fenetreUnivers.ShowDialog();
+            Univers = fenetreUnivers.Univers;
+            this.Show();
         }
 
         private void btn_leaderboard_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
             FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard();
             fenetreLeaderboard.Show();
-            this.Close();
+            this.Show();
         }
 
         private void btn_credits_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
             FenetreCredits fenetreCredits = new FenetreCredits();
             fenetreCredits.Show();
-            this.Close();
+            this.Show();
         }
 
         private void btn_quitter_Click(object sender, RoutedEventArgs e)

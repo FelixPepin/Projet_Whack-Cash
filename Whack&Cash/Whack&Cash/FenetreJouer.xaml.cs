@@ -25,17 +25,14 @@ namespace Whack_Cash
 
         internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
 
-        public FenetreJouer()
+        public FenetreJouer(string univers)
         {
             InitializeComponent();
             this.Focus();
             this.Loaded += FenetreJouer_Loaded;
-            lesEnnemis.Add(new Ennemi(2, "Marine", "Images/marine.png", 10000));
-            lesEnnemis.Add(new Ennemi(5000, "Ninja", "Images/ninja.png", 200));
-            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
-            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
-            lesEnnemis.Add(new Ennemi(5, "Ninja", "Images/ninja.png", 200));
 
+            leJoueur.DegatAttaque = 200;
+            lesEnnemis = BD.ChargerEnnemi(univers);
             FaireApparaitreEnnemi(lesEnnemis[0]);
         }
         /// <summary>

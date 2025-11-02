@@ -37,8 +37,6 @@ namespace Whack_Cash
         {
             if (e.Key == Key.Escape)
             {
-                MainWindow menuPrincipale = new MainWindow();
-                menuPrincipale.Show();
                 this.Close();
             }
         }

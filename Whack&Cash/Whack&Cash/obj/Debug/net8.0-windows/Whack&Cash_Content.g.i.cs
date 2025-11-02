@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/archimage_renegat.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/argent.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/background.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/boutique.png")]
@@ -17,8 +18,25 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_continuer.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_retour.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_retour_boutique.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/chevalier_noir.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/colosse_meca.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/dragon_ancestral.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/eren.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/garde_acier.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/goku.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/golem_basaltique.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/gon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ichigo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/killua.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/korosensei.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/loup_alpha.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/luffy.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/maraudeur.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/marine.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/naruto.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/ninja.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/retour_desktop.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/seigneur_troll.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/spectre_vengeur.png")]
 
 

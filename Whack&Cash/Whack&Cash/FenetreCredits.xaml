@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="FenetreCredits" Height="450" Width="800"
         KeyDown="Window_KeyDown"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" Background="Black">
     <Grid>
-        <TextBlock TextWrapping="Wrap" Margin="0,118,-115,204" FontSize="56" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans Crédits"/></TextBlock>
+        <TextBlock Background="Transparent" Foreground="White" Margin="20,43,10,300" Text="Ce jeu a été entièrement fait par :" FontSize="50"/>
+        <TextBlock Background="Transparent" Foreground="White" Margin="282,172,249,171" Text="Félix Pépin" FontSize="50"/>
     </Grid>
 </Window>

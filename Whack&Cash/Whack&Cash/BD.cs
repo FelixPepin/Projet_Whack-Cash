@@ -74,15 +74,19 @@ namespace Whack_Cash
             return lesItems;
         }
 
-        public static List<Ennemi> ChargerEnnemi()
+        public static List<Ennemi> ChargerEnnemi(string univers)
         {
-            string chargerEnnemi = "select * FROM ennemie";
+            string chargerEnnemi = "select * FROM ennemie WHERE univers = @univers";
 
             MySqlConnection laConnection = new MySqlConnection(INFO_CONNEXION);
 
             laConnection.Open();
 
             MySqlCommand laCommande = new MySqlCommand(chargerEnnemi, laConnection);
+
+            laCommande.Prepare();
+            laCommande.Parameters.Add("@univers", MySqlDbType.String).Value = univers;
+
 
             MySqlDataReader leLecteur = laCommande.ExecuteReader();
 

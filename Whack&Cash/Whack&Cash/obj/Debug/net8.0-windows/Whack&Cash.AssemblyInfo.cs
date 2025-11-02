@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Whack&Cash")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edc86aa019242d11a36191ec19f586b834ab6e9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82573e47dcae88e9c2fd9cd47b4627c3fd3919bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Whack&Cash")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Whack&Cash")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

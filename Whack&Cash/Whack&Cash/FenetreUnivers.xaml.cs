@@ -19,6 +19,10 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreUnivers : Window
     {
+        private string _univers;
+
+        public string Univers { get => _univers; set => _univers = value; }
+
         public FenetreUnivers()
         {
             InitializeComponent();
@@ -31,10 +35,18 @@ namespace Whack_Cash
         {
             if (e.Key == Key.Escape)
             {
-                MainWindow menuPrincipale = new MainWindow();
-                menuPrincipale.Show();
                 this.Close();
             }
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem universSelectionner = cbo_univers.SelectedItem as ComboBoxItem;
+            if (universSelectionner.Content != null)
+            {
+                Univers = universSelectionner.Content.ToString();
+            }
+
         }
     }
 }

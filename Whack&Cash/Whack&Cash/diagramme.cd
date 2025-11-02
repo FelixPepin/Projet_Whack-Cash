@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Whack_Cash.BD">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAIAAAAAAAAAAAAAIAAAAAAAAgAAAAA=</HashCode>
+      <FileName>BD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Whack_Cash.Ennemi">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAABABCAAAAAIAAAACIAIAAA=</HashCode>
+      <FileName>Ennemi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Whack_Cash.FenetreBoutique">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAABAQAAAQABAAAAAAAAAQAAAAgAAAAAgA=</HashCode>
+      <FileName>FenetreBoutique.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Whack_Cash.FenetreConnexion">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>FenetreConnexion.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Whack_Cash.FenetreCredits">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FenetreCredits.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Whack_Cash.FenetreJouer">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACEAAAKAAABAAAAAQAAAAAAAAAQIAAAAQAAAAAAAA=</HashCode>
+      <FileName>FenetreJouer.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Whack_Cash.FenetreLeaderboard">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FenetreLeaderboard.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Whack_Cash.FenetreUnivers">
+    <Position X="9" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FenetreUnivers.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Whack_Cash.ItemPermanent">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAIQEAABAAAAQBCAAAAAAAQAAAAACAAA=</HashCode>
+      <FileName>ItemPermanent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Whack_Cash.ItemTemporaire">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAIQEAQDAAAAQBCAAAAAAAQAAAAACAAA=</HashCode>
+      <FileName>ItemTemporaire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Whack_Cash.Joueur">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkBBAAIACAQAABAAAIAgAAIAAAAABAAAAEAABQIBAAA=</HashCode>
+      <FileName>Joueur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Whack_Cash.MainWindow">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAgAAAICAgAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

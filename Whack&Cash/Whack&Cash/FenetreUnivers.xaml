@@ -9,6 +9,11 @@
         KeyDown="Window_KeyDown"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock TextWrapping="Wrap" Margin="0,118,-115,204" FontSize="52" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans Univers"/></TextBlock>
+        <ComboBox x:Name="cbo_univers" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem IsSelected="True">Fantaisie</ComboBoxItem>
+            <ComboBoxItem>Anime</ComboBoxItem>
+            <ComboBoxItem>Film</ComboBoxItem>
+            <ComboBoxItem>Historique</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>
