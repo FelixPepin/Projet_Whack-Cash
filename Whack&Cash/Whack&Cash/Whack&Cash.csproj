@@ -13,6 +13,9 @@
     <None Remove="Images\archimage_renegat.png" />
     <None Remove="Images\argent.png" />
     <None Remove="Images\background.jpg" />
+    <None Remove="Images\bb8.png" />
+    <None Remove="Images\BJ.png" />
+    <None Remove="Images\bobba.png" />
     <None Remove="Images\boutique.png" />
     <None Remove="Images\btn_acheter.png" />
     <None Remove="Images\btn_attaque.png" />
@@ -21,9 +24,18 @@
     <None Remove="Images\btn_retour.png" />
     <None Remove="Images\btn_retour_boutique.png" />
     <None Remove="Images\chevalier_noir.png" />
+    <None Remove="Images\chewbacca.png" />
+    <None Remove="Images\clone.png" />
     <None Remove="Images\colosse_meca.png" />
+    <None Remove="Images\crash.png" />
+    <None Remove="Images\ct.png" />
+    <None Remove="Images\darth.png" />
+    <None Remove="Images\destroyer.png" />
+    <None Remove="Images\dk.png" />
+    <None Remove="Images\doom.png" />
     <None Remove="Images\dragon_ancestral.png" />
     <None Remove="Images\eren.png" />
+    <None Remove="Images\evoli.png" />
     <None Remove="Images\garde_acier.png" />
     <None Remove="Images\goku.png" />
     <None Remove="Images\golem_basaltique.png" />
@@ -31,15 +43,29 @@
     <None Remove="Images\ichigo.png" />
     <None Remove="Images\killua.png" />
     <None Remove="Images\korosensei.png" />
+    <None Remove="Images\kratos.png" />
+    <None Remove="Images\kylo.png" />
     <None Remove="Images\loup_alpha.png" />
     <None Remove="Images\luffy.png" />
     <None Remove="Images\maraudeur.png" />
     <None Remove="Images\marine.png" />
+    <None Remove="Images\mario.png" />
     <None Remove="Images\naruto.png" />
     <None Remove="Images\ninja.png" />
     <None Remove="Images\retour_desktop.png" />
+    <None Remove="Images\rey.png" />
     <None Remove="Images\seigneur_troll.png" />
     <None Remove="Images\spectre_vengeur.png" />
+    <None Remove="Images\starfighter.png" />
+    <None Remove="Images\steve.png" />
+    <None Remove="Images\terrorist_cs2.png" />
+    <None Remove="Images\yoda.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\kylo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +76,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bb8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BJ.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bobba.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\boutique.png">
@@ -76,13 +111,40 @@
     <Content Include="Images\chevalier_noir.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\chewbacca.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\clone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\colosse_meca.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\crash.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ct.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\darth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\destroyer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\doom.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\dragon_ancestral.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\eren.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\evoli.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\garde_acier.png">
@@ -106,6 +168,9 @@
     <Content Include="Images\korosensei.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\kratos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\loup_alpha.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -118,6 +183,9 @@
     <Content Include="Images\marine.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\mario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\naruto.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -127,10 +195,25 @@
     <Content Include="Images\retour_desktop.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\rey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\seigneur_troll.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\spectre_vengeur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\starfighter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\steve.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\terrorist_cs2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\yoda.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

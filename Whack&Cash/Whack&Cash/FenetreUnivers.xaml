@@ -12,8 +12,8 @@
         <ComboBox x:Name="cbo_univers" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem IsSelected="True">Fantaisie</ComboBoxItem>
             <ComboBoxItem>Anime</ComboBoxItem>
-            <ComboBoxItem>Film</ComboBoxItem>
-            <ComboBoxItem>Historique</ComboBoxItem>
+            <ComboBoxItem>Gaming</ComboBoxItem>
+            <ComboBoxItem>Star Wars</ComboBoxItem>
         </ComboBox>
     </Grid>
 </Window>
