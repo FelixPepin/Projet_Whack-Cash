@@ -39,14 +39,53 @@ namespace Whack_Cash
             }
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void btn_fantaisie_Click(object sender, RoutedEventArgs e)
         {
-            ComboBoxItem universSelectionner = cbo_univers.SelectedItem as ComboBoxItem;
-            if (universSelectionner.Content != null)
+            MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Fantaisie ?"
+                ,"Choix Fantaisie" ,MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (resultat == MessageBoxResult.Yes)
             {
-                Univers = universSelectionner.Content.ToString();
+                Univers = "Fantaisie";
+                this.Close();
             }
+        }
 
+        private void btn_star_wars_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Star Wars ?"
+                , "Choix Star Wars", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (resultat == MessageBoxResult.Yes)
+            {
+                Univers = "Star Wars";
+                this.Close();
+            }
+        }
+
+        private void btn_gaming_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Gaming ?"
+                , "Choix Gaming", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (resultat == MessageBoxResult.Yes)
+            {
+                Univers = "Gaming";
+                this.Close();
+            }
+        }
+
+        private void btn_anime_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Anime ?"
+                , "Choix Anime", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (resultat == MessageBoxResult.Yes)
+            {
+                Univers = "Anime";
+                this.Close();
+            }
+        }
+
+        private void btn_retour_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

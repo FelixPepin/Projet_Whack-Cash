@@ -18,11 +18,15 @@
     <None Remove="Images\bobba.png" />
     <None Remove="Images\boutique.png" />
     <None Remove="Images\btn_acheter.png" />
+    <None Remove="Images\btn_anime.png" />
     <None Remove="Images\btn_attaque.png" />
     <None Remove="Images\btn_boutique.png" />
     <None Remove="Images\btn_continuer.png" />
+    <None Remove="Images\btn_fantaisie.png" />
+    <None Remove="Images\btn_gaming.png" />
     <None Remove="Images\btn_retour.png" />
     <None Remove="Images\btn_retour_boutique.png" />
+    <None Remove="Images\btn_star_wars.png" />
     <None Remove="Images\chevalier_noir.png" />
     <None Remove="Images\chewbacca.png" />
     <None Remove="Images\clone.png" />
@@ -59,10 +63,23 @@
     <None Remove="Images\starfighter.png" />
     <None Remove="Images\steve.png" />
     <None Remove="Images\terrorist_cs2.png" />
+    <None Remove="Images\univers_bg.png" />
     <None Remove="Images\yoda.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\btn_anime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\btn_fantaisie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\btn_gaming.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\btn_star_wars.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\kylo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -211,6 +228,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\terrorist_cs2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\univers_bg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\yoda.png">

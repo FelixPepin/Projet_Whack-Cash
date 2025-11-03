@@ -9,11 +9,63 @@
         KeyDown="Window_KeyDown"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <ComboBox x:Name="cbo_univers" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem IsSelected="True">Fantaisie</ComboBoxItem>
-            <ComboBoxItem>Anime</ComboBoxItem>
-            <ComboBoxItem>Gaming</ComboBoxItem>
-            <ComboBoxItem>Star Wars</ComboBoxItem>
-        </ComboBox>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/univers_bg.png"/>
+        </Grid.Background>
+        <Image Source="/Images/btn_star_wars.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="501,40,93,0" />
+        <Button x:Name="btn_star_wars" HorizontalAlignment="Left" Margin="522,80,0,0" VerticalAlignment="Top" Width="164" Height="42" OverridesDefaultStyle="True" 
+        Background="Transparent" Focusable="False" Click="btn_star_wars_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Images/btn_gaming.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="82,264,512,0" />
+        <Button x:Name="btn_gaming" HorizontalAlignment="Left" Margin="103,301,0,0" VerticalAlignment="Top" Width="163" Height="53" OverridesDefaultStyle="True" 
+        Background="Transparent" Focusable="False" Click="btn_gaming_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Images/btn_fantaisie.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="82,40,512,0" />
+        <Button x:Name="btn_fantaisie" HorizontalAlignment="Left" Margin="104,80,0,0" VerticalAlignment="Top" Width="162" Height="42" OverridesDefaultStyle="True" 
+        Background="Transparent" Focusable="False" Click="btn_fantaisie_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Images/btn_anime.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="501,266,93,0" />
+        <Button x:Name="btn_anime" HorizontalAlignment="Left" Margin="522,301,0,0" VerticalAlignment="Top" Width="163" Height="53" OverridesDefaultStyle="True" 
+        Background="Transparent" Focusable="False" Click="btn_anime_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Source="/Images/btn_retour.png" Stretch="Fill" Height="180" VerticalAlignment="Center" Margin="291,0,277,0" />
+        <Button x:Name="btn_retour" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="53" OverridesDefaultStyle="True" 
+        Background="Transparent" Focusable="False" Click="btn_retour_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>
