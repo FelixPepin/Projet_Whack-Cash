@@ -31,7 +31,6 @@ namespace Whack_Cash
             this.Focus();
             this.Loaded += FenetreJouer_Loaded;
 
-            leJoueur.DegatAttaque = 200;
             lesEnnemis = BD.ChargerEnnemi(univers);
             FaireApparaitreEnnemi(lesEnnemis[0]);
         }
