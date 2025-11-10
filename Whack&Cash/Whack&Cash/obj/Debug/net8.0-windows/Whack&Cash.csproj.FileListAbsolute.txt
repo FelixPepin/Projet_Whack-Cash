@@ -173,3 +173,4 @@ C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_fantaisie.png
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_star_wars.png
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_gaming.png
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\Connexion_bg.png

@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="FenetreJouer" Height="450" Width="800"
         KeyDown="Window_KeyDown"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Closed="FenetreJouer_Closed">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Images/background.jpg"/>

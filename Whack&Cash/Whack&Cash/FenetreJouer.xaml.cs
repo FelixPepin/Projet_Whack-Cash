@@ -21,18 +21,23 @@ namespace Whack_Cash
     {
         private int numEnnemi = 0;
         private List<Ennemi> lesEnnemis = new List<Ennemi>();
-        private Joueur leJoueur = new Joueur(0, 0, 0, 0);
+        private Joueur leJoueur = new Joueur();
+        private string _univers;
 
         internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
 
-        public FenetreJouer(string univers)
+        public FenetreJouer(string univers, string nomJoueur)
         {
             InitializeComponent();
             this.Focus();
             this.Loaded += FenetreJouer_Loaded;
+            _univers = univers;
 
-            lesEnnemis = BD.ChargerEnnemi(univers);
-            FaireApparaitreEnnemi(lesEnnemis[0]);
+
+            if (nomJoueur != "")
+                LeJoueur = BD.ChargerJoueur(nomJoueur);
+            else
+                LeJoueur = new Joueur();
         }
         /// <summary>
         /// Fonction qui se lance quand la page fini de load.
@@ -73,17 +78,27 @@ namespace Whack_Cash
         {
             // Si une sauvegarde existe, on demande au joueur si il veut continuer sa partie,
             // commencer une nouvelle partie ou retourner au menu.
-            if (FenetreConnexion.Sauvegarde == true)
+            if (LeJoueur.Sauvegarde == true)
             {
                 MessageBoxResult resultat = MessageBox.Show("Voulez vous continuer votre partie ?\nOui = Continuer" +
                     "\nNon = Nouvelle Partie\nAnnuler = Retour au menu", "Continuer ou Nouvelle Partie", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
                 if (resultat == MessageBoxResult.Yes)
                 {
+                    _univers = LeJoueur.UniversEnCours;
                     MessageBox.Show("Chargement de la partie existante !");
+                    lesEnnemis = BD.ChargerLesEnnemi(LeJoueur.UniversEnCours);
+                    while (lesEnnemis[numEnnemi].Id != LeJoueur.EnnemiEnCours.Id)
+                    {
+                        numEnnemi++;
+                    }
+                    lesEnnemis[numEnnemi].PtsVie = LeJoueur.EnnemiEnCours.PtsVie;
+                    FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
+                    
                 }
                 else if (resultat == MessageBoxResult.No)
                 {
                     MessageBox.Show("Lancement de la nouvelle partie !");
+                    CommencerUnePartieDuDebut();
                 }
                 else if (resultat == MessageBoxResult.Cancel)
                 {
@@ -101,6 +116,7 @@ namespace Whack_Cash
                 if (resultat == MessageBoxResult.OK)
                 {
                     MessageBox.Show("Lancement de la nouvelle partie !");
+                    CommencerUnePartieDuDebut();
                 }
                 else if (resultat == MessageBoxResult.Cancel)
                 {
@@ -173,6 +189,18 @@ namespace Whack_Cash
             txtVie.Text = barreDeVie.Value + " / " + barreDeVie.Maximum;
 
 
+        }
+        private void CommencerUnePartieDuDebut()
+        {
+            lesEnnemis = BD.ChargerLesEnnemi(_univers);
+            FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
+        }
+        private void FenetreJouer_Closed(object sender, EventArgs e)
+        {
+            if (LeJoueur.Est_connecte)
+            {
+                BD.SauvegarderUtilisateur(LeJoueur, lesEnnemis[numEnnemi], _univers);
+            }
         }
     }
 }

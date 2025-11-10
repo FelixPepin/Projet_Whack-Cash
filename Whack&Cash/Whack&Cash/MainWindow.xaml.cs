@@ -18,7 +18,10 @@ namespace Whack_Cash
     {
         private string _univers;
 
+        private Joueur _leJoueur;
+
         public string Univers { get => _univers; set => _univers = value; }
+        internal Joueur LeJoueur { get => _leJoueur; set => _leJoueur = value; }
 
         public MainWindow()
         {
@@ -29,7 +32,10 @@ namespace Whack_Cash
         {
             if (Univers == null)
                 Univers = "Fantaisie";
-            FenetreJouer fenetreJouer = new FenetreJouer(Univers);
+            string nomJoueur = "";
+            if (LeJoueur != null)
+                nomJoueur = LeJoueur.Nom;
+            FenetreJouer fenetreJouer = new FenetreJouer(Univers, nomJoueur);
             fenetreJouer.Show();
             this.Close();
         }
@@ -39,6 +45,7 @@ namespace Whack_Cash
             this.Hide();
             FenetreConnexion fenetreConnexion = new FenetreConnexion();
             fenetreConnexion.ShowDialog();
+            LeJoueur = FenetreConnexion.LeJoueurConnecte;
             this.Show();
 
         }

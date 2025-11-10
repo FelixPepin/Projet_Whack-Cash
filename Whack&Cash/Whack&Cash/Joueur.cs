@@ -18,6 +18,8 @@ namespace Whack_Cash
         private string nom;
         private Ennemi ennemiEnCours;
         private string universEnCours;
+        private bool sauvegarde;
+        private bool est_connecte;
 
         public int DegatAttaque { get => _degatAttaque; set => _degatAttaque = value; }
         public int ArgentDansPartie { get => _argentDansPartie; set => _argentDansPartie = value; }
@@ -29,6 +31,8 @@ namespace Whack_Cash
         public string Nom { get => nom; set => nom = value; }
         internal Ennemi EnnemiEnCours { get => ennemiEnCours; set => ennemiEnCours = value; }
         public string UniversEnCours { get => universEnCours; set => universEnCours = value; }
+        public bool Sauvegarde { get => sauvegarde; set => sauvegarde = value; }
+        public bool Est_connecte { get => est_connecte; set => est_connecte = value; }
 
         public Joueur()
         {
@@ -38,27 +42,41 @@ namespace Whack_Cash
             NbEnnemiTuerPartie = 0;
             NbEnnemiTuerTotal = 0;
             LesItemsPermanents = new List<ItemPermanent>();
+            Nom = "";
+            Est_connecte = false;
         }
-        public Joueur(int ennemiEnCours, int pvEnnemiEnCours, int argentDansPartie, int itemTemporaire, string lesItemsPermanent, string univers)
+        public Joueur(int ennemiEnCours, int pvEnnemiEnCours, int argentDansPartie, int itemTemporaire, string lesItemsPermanent
+            , string univers, bool sauvegarde, string nom)
         {
-            _degatAttaque = 1;
-            EnnemiEnCours = BD.ChargerEnnemiEnCours(ennemiEnCours);
-            EnnemiEnCours.PtsVie = pvEnnemiEnCours;
-            ArgentDansPartie = argentDansPartie;
-            ItemTemporaire = BD.ChargerItemTemporaire(itemTemporaire);
-
-            string[] idItemsPermanent = lesItemsPermanent.Split(',');
-            LesItemsPermanents = new List<ItemPermanent>();
-            foreach (string id in idItemsPermanent)
+            DegatAttaque = 1;
+            Nom = nom;
+            if (sauvegarde)
             {
-                if (!string.IsNullOrWhiteSpace(id))
+                EnnemiEnCours = BD.ChargerEnnemiEnCours(ennemiEnCours);
+                EnnemiEnCours.PtsVie = pvEnnemiEnCours;
+                ArgentDansPartie = argentDansPartie;
+                if (itemTemporaire != 0)
                 {
-                    int idItemPermanent = int.Parse(id);
-                    LesItemsPermanents.Add(BD.ChargerItemPermanent(idItemPermanent));
+                    ItemTemporaire item = BD.ChargerItemTemporaire(itemTemporaire);
+                    AjouterItemTemporaire(item);
                 }
-       
+                string[] idItemsPermanent = lesItemsPermanent.Split(',');
+                LesItemsPermanents = new List<ItemPermanent>();
+                foreach (string id in idItemsPermanent)
+                {
+                    if (!string.IsNullOrWhiteSpace(id))
+                    {
+                        int idItemPermanent = int.Parse(id);
+                        ItemPermanent item = BD.ChargerItemPermanent(idItemPermanent);
+                        AjouterItemPermanent(item);
+                    }
+
+                }
+               
+                UniversEnCours = univers;
             }
-            UniversEnCours = univers;
+            Est_connecte = true;
+            Sauvegarde = sauvegarde;
         }
         public void AjouterItemPermanent(ItemPermanent item)
         {

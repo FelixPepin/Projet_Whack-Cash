@@ -77,8 +77,8 @@ namespace Whack_Cash
         {
             if (lesItemsPermanents == null && lesItemsTemporaires == null)
             {
-                lesItemsPermanents = BD.ChargerItemPermanent();
-                lesItemsTemporaires = BD.ChargerItemTemporaire();
+                lesItemsPermanents = BD.ChargerLesItemPermanent();
+                lesItemsTemporaires = BD.ChargerLesItemTemporaire();
                 foreach (ItemTemporaire item in lesItemsTemporaires)
                 {
                     lst_items.Items.Add(item);

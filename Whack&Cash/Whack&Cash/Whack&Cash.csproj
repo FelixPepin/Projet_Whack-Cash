@@ -31,6 +31,7 @@
     <None Remove="Images\chewbacca.png" />
     <None Remove="Images\clone.png" />
     <None Remove="Images\colosse_meca.png" />
+    <None Remove="Images\Connexion_bg.png" />
     <None Remove="Images\crash.png" />
     <None Remove="Images\ct.png" />
     <None Remove="Images\darth.png" />
@@ -78,6 +79,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_star_wars.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Connexion_bg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\kylo.png">

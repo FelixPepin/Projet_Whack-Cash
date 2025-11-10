@@ -207,20 +207,29 @@ namespace Whack_Cash
 
             laConnection.Close();
         }
-        public static void SauvegarderUtilisateur(Joueur leJoueur, Ennemi ennemiEnCours)
+        public static void SauvegarderUtilisateur(Joueur leJoueur, Ennemi ennemiEnCours, string univers)
         {
             string sauvegarderUtilisateur = "update utilisateurs set ennemi_en_cours = @ennemi_en_cours, pv_ennemi_en_cours = @pv_ennemi_en_cours, " +
                 " ennemis_totaux_tues = @ennemis_totaux_tues, argent_en_cours = @argent_en_cours, argent_total = @argent_total, " +
-                "item_temporaire_id = @item_temporaire_id, items_permanents = @items_permanents WHERE nom = @nom";
+                "item_temporaire_id = @item_temporaire_id, items_permanents = @items_permanents, univers = @univers ,sauvegarde = @sauvegarde" +
+                " WHERE nom = @nom";
 
             string itemPermanents = "";
 
-            foreach (ItemPermanent item in leJoueur.LesItemsPermanents)
+            if (leJoueur.LesItemsPermanents != null)
             {
-                if (itemPermanents.Length > 0)
-                    itemPermanents += ",";
-                itemPermanents += item.Id;
+                foreach (ItemPermanent item in leJoueur.LesItemsPermanents)
+                {
+                    if (itemPermanents.Length > 0)
+                        itemPermanents += ",";
+                    itemPermanents += item.Id;
+                }
             }
+
+            int itemTemporaire = 0;
+
+            if (leJoueur.ItemTemporaire != null)
+                itemTemporaire = leJoueur.ItemTemporaire.Id;
 
             MySqlConnection laConnection = new MySqlConnection(INFO_CONNEXION);
 
@@ -234,9 +243,11 @@ namespace Whack_Cash
             laCommande.Parameters.Add("@ennemis_totaux_tues", MySqlDbType.Int32).Value = leJoueur.NbEnnemiTuerTotal;
             laCommande.Parameters.Add("@argent_en_cours", MySqlDbType.Int32).Value = leJoueur.ArgentDansPartie;
             laCommande.Parameters.Add("@argent_total", MySqlDbType.Int32).Value = leJoueur.ArgentTotal;
-            laCommande.Parameters.Add("@item_temporaire_id", MySqlDbType.Int32).Value = (object?)leJoueur.ItemTemporaire?.Id ?? DBNull.Value;
+            laCommande.Parameters.Add("@item_temporaire_id", MySqlDbType.Int32).Value = itemTemporaire;
             laCommande.Parameters.Add("@items_permanents", MySqlDbType.String).Value = itemPermanents;
             laCommande.Parameters.Add("@nom", MySqlDbType.String).Value = leJoueur.Nom;
+            laCommande.Parameters.Add("@univers", MySqlDbType.String).Value = univers;
+            laCommande.Parameters.Add("@sauvegarde", MySqlDbType.Bool).Value = true;
 
             laCommande.ExecuteNonQuery();
 
@@ -263,7 +274,8 @@ namespace Whack_Cash
 
             if (leLecteur.Read())
                 leJoueur = new Joueur(leLecteur.GetInt32("ennemi_en_cours"), leLecteur.GetInt32("pv_ennemi_en_cours"), leLecteur.GetInt32("argent_en_cours") 
-                    ,leLecteur.GetInt32("item_temporaire_id"), leLecteur.GetString("items_permanents"), leLecteur.GetString("univers"));
+                    ,leLecteur.GetInt32("item_temporaire_id"), leLecteur.GetString("items_permanents"), leLecteur.GetString("univers")
+                    , leLecteur.GetBoolean("sauvegarde"), leLecteur.GetString("nom"));
 
             leLecteur.Close();
 
@@ -272,9 +284,9 @@ namespace Whack_Cash
             return leJoueur;
         }
 
-        public static List<string> ChargerNomTousLesJoueurs()
+        public static List<(string, string)> ChargerInfoTousLesJoueurs()
         {
-            string chargerJoueurs = "select nom FROM utilisateurs";
+            string chargerJoueurs = "select nom, mot_de_passe FROM utilisateurs";
 
             MySqlConnection laConnection = new MySqlConnection(INFO_CONNEXION);
 
@@ -284,19 +296,16 @@ namespace Whack_Cash
 
             MySqlDataReader leLecteur = laCommande.ExecuteReader();
 
-            List<string> lesNoms = new List<string>();
+            List<(string, string)> lesJoueurs = new List<(string, string)>();
 
             while (leLecteur.Read())
-            {
-                string nom = leLecteur.GetString("nom");
-                lesNoms.Add(nom);
-            }
+                lesJoueurs.Add((leLecteur.GetString("nom"), leLecteur.GetString("mot_de_passe")));
 
             leLecteur.Close();
 
             laConnection.Close();
 
-            return lesNoms;
+            return lesJoueurs;
         }
     }
 }
