@@ -55,36 +55,7 @@ namespace Whack_Cash
             }
         }
 
-        private void btn_authentification_Click(object sender, RoutedEventArgs e)
-        {
-            Nom = txt_nom.Text;
-            Mdp = txt_mdp.Password;
-            string messageErreur = "";
-
-
-            if (Nom.Length < 4 || Nom.Length > 16)
-                messageErreur = "Votre nom doit être entre 4 et 16 caractères";
-            else if (Mdp.Length < 4 || Mdp.Length > 16)
-                messageErreur = "Votre mot de passe doit être entre 4 et 16 caractères";
-            else
-            {
-                LesInfosJoueurs = BD.ChargerInfoTousLesJoueurs();
-                foreach ((string, string) infoJoueur in LesInfosJoueurs)
-                    if (infoJoueur.Item1 == Nom)
-                        messageErreur = "Vous ne pouvez pas avoir un nom déjà utiliser par un autre joueur.";
-            }
-            
-            if (messageErreur != "")
-                MessageBox.Show(messageErreur, "Erreur dans l'authentification", MessageBoxButton.OK, MessageBoxImage.Error);
-            else
-            {
-                BD.CreerUtilisateur(Nom, Mdp);
-                MessageBox.Show("Votre compte à été créé avec succès!", "Création compte", MessageBoxButton.OK, MessageBoxImage.Information);
-                LeJoueurConnecte = BD.ChargerJoueur(Nom);
-                this.Close();
-            }
-
-        }
+        
 
         private void btn_connexion_Click(object sender, RoutedEventArgs e)
         {

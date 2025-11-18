@@ -63,7 +63,7 @@ namespace Whack_Cash
         {
             this.Hide();
             FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard();
-            fenetreLeaderboard.Show();
+            fenetreLeaderboard.ShowDialog();
             this.Show();
         }
 
@@ -71,13 +71,21 @@ namespace Whack_Cash
         {
             this.Hide();
             FenetreCredits fenetreCredits = new FenetreCredits();
-            fenetreCredits.Show();
+            fenetreCredits.ShowDialog();
             this.Show();
         }
 
         private void btn_quitter_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_inscription_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            FenetreInscription fenetreInscription = new FenetreInscription();
+            fenetreInscription.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -11,6 +11,9 @@
     <Compile Update="FenetreCredits.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="FenetreInscription.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="FenetreJouer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

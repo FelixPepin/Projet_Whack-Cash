@@ -14,6 +14,7 @@
     <None Remove="Images\argent.png" />
     <None Remove="Images\background.jpg" />
     <None Remove="Images\bb8.png" />
+    <None Remove="Images\bg_inscription.png" />
     <None Remove="Images\BJ.png" />
     <None Remove="Images\bobba.png" />
     <None Remove="Images\boutique.png" />
@@ -21,9 +22,11 @@
     <None Remove="Images\btn_anime.png" />
     <None Remove="Images\btn_attaque.png" />
     <None Remove="Images\btn_boutique.png" />
+    <None Remove="Images\btn_connexion.png" />
     <None Remove="Images\btn_continuer.png" />
     <None Remove="Images\btn_fantaisie.png" />
     <None Remove="Images\btn_gaming.png" />
+    <None Remove="Images\btn_inscription.png" />
     <None Remove="Images\btn_retour.png" />
     <None Remove="Images\btn_retour_boutique.png" />
     <None Remove="Images\btn_star_wars.png" />
@@ -69,13 +72,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\bg_inscription.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\btn_anime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\btn_connexion.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_fantaisie.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_gaming.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\btn_inscription.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_star_wars.png">
