@@ -93,7 +93,8 @@ namespace Whack_Cash
                     }
                     lesEnnemis[numEnnemi].PtsVie = LeJoueur.EnnemiEnCours.PtsVie;
                     FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
-                    
+                    txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
+
                 }
                 else if (resultat == MessageBoxResult.No)
                 {

@@ -27,7 +27,7 @@ namespace Whack_Cash
         public int NbEnnemiTuerPartie { get => _nbEnnemiTuerPartie; set => _nbEnnemiTuerPartie = value; }
         public int NbEnnemiTuerTotal { get => _nbEnnemiTuerTotal; set => _nbEnnemiTuerTotal = value; }
         public ItemTemporaire? ItemTemporaire { get => _itemTemporaire; set => _itemTemporaire = value; }
-        public List<ItemPermanent> LesItemsPermanents { get => _lesItemsPermanents; set => _lesItemsPermanents = value; }
+        public List<ItemPermanent>? LesItemsPermanents { get => _lesItemsPermanents; set => _lesItemsPermanents = value; }
         public string Nom { get => nom; set => nom = value; }
         internal Ennemi EnnemiEnCours { get => ennemiEnCours; set => ennemiEnCours = value; }
         public string UniversEnCours { get => universEnCours; set => universEnCours = value; }
@@ -58,7 +58,7 @@ namespace Whack_Cash
                 if (itemTemporaire != 0)
                 {
                     ItemTemporaire item = BD.ChargerItemTemporaire(itemTemporaire);
-                    AjouterItemTemporaire(item);
+                    AjouterItemTemporaireSauvegarder(item);
                 }
                 string[] idItemsPermanent = lesItemsPermanent.Split(',');
                 LesItemsPermanents = new List<ItemPermanent>();
@@ -68,7 +68,7 @@ namespace Whack_Cash
                     {
                         int idItemPermanent = int.Parse(id);
                         ItemPermanent item = BD.ChargerItemPermanent(idItemPermanent);
-                        AjouterItemPermanent(item);
+                        AjouterItemPermanentSauvegarder(item);
                     }
 
                 }
@@ -80,6 +80,8 @@ namespace Whack_Cash
         }
         public void AjouterItemPermanent(ItemPermanent item)
         {
+            if (LesItemsPermanents is null)
+                LesItemsPermanents = new List<ItemPermanent>();
             ArgentDansPartie = ArgentDansPartie - item.Prix;
             DegatAttaque = DegatAttaque + item.DegatSup;
             LesItemsPermanents.Add(item);
@@ -88,6 +90,19 @@ namespace Whack_Cash
         public void AjouterItemTemporaire(ItemTemporaire item)
         {
             ArgentDansPartie = ArgentDansPartie - item.Prix;
+            DegatAttaque = DegatAttaque + item.DegatSup;
+            ItemTemporaire = item;
+        }
+        public void AjouterItemPermanentSauvegarder(ItemPermanent item)
+        {
+            if (LesItemsPermanents is null)
+                LesItemsPermanents = new List<ItemPermanent>();
+            DegatAttaque = DegatAttaque + item.DegatSup;
+            LesItemsPermanents.Add(item);
+        }
+
+        public void AjouterItemTemporaireSauvegarder(ItemTemporaire item)
+        {
             DegatAttaque = DegatAttaque + item.DegatSup;
             ItemTemporaire = item;
         }

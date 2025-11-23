@@ -41,35 +41,34 @@ namespace Whack_Cash
 
         private void btn_inscription_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Le bouton marche");
-            //string nom = txt_nom.Text;
-            //string mdp = txt_mdp.Password;
-            //string mdpConfirmation = txt_mdpConfirmation.Password;
-            //string messageErreur = "";
+            string nom = txt_nom.Text;
+            string mdp = txt_mdp.Password;
+            string mdpConfirmation = txt_mdpConfirmation.Password;
+            string messageErreur = "";
 
 
-            //if (nom.Length < 4 || nom.Length > 16)
-            //    messageErreur = "Votre nom doit être entre 4 et 16 caractères";
-            //else if (mdp.Length < 4 || mdp.Length > 16)
-            //    messageErreur = "Votre mot de passe doit être entre 4 et 16 caractères";
-            //else if (mdp != mdpConfirmation)
-            //    messageErreur = "Le mot de passe et sa confirmation doivent être identiques.";
-            //else
-            //{
-            //    LesInfosJoueurs = BD.ChargerInfoTousLesJoueurs();
-            //    foreach ((string, string) infoJoueur in LesInfosJoueurs)
-            //        if (infoJoueur.Item1 == nom)
-            //            messageErreur = "Vous ne pouvez pas avoir un nom déjà utiliser par un autre joueur.";
-            //}
+            if (nom.Length < 4 || nom.Length > 16)
+                messageErreur = "Votre nom doit être entre 4 et 16 caractères";
+            else if (mdp.Length < 4 || mdp.Length > 16)
+                messageErreur = "Votre mot de passe doit être entre 4 et 16 caractères";
+            else if (mdp != mdpConfirmation)
+                messageErreur = "Le mot de passe et sa confirmation doivent être identiques.";
+            else
+            {
+                LesInfosJoueurs = BD.ChargerInfoTousLesJoueurs();
+                foreach ((string, string) infoJoueur in LesInfosJoueurs)
+                    if (infoJoueur.Item1 == nom)
+                        messageErreur = "Vous ne pouvez pas avoir un nom déjà utiliser par un autre joueur.";
+            }
 
-            //if (messageErreur != "")
-            //    MessageBox.Show(messageErreur, "Erreur dans l'authentification", MessageBoxButton.OK, MessageBoxImage.Error);
-            //else
-            //{
-            //    BD.CreerUtilisateur(nom, mdp);
-            //    MessageBox.Show("Votre compte à été créé avec succès, vous pouvez maintenant vous connecter!", "Création compte", MessageBoxButton.OK, MessageBoxImage.Information);
-            //    this.Close();
-            //}
+            if (messageErreur != "")
+                MessageBox.Show(messageErreur, "Erreur dans l'authentification", MessageBoxButton.OK, MessageBoxImage.Error);
+            else
+            {
+                BD.CreerUtilisateur(nom, mdp);
+                MessageBox.Show("Votre compte à été créé avec succès, vous pouvez maintenant vous connecter!", "Création compte", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.Close();
+            }
 
         }
     }
