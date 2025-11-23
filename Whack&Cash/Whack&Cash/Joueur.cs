@@ -11,7 +11,6 @@ namespace Whack_Cash
         private int _degatAttaque;
         private int _argentDansPartie;
         private int _argentTotal;
-        private int _nbEnnemiTuerPartie;
         private int _nbEnnemiTuerTotal;
         private ItemTemporaire? _itemTemporaire;
         private List<ItemPermanent> _lesItemsPermanents;
@@ -24,7 +23,6 @@ namespace Whack_Cash
         public int DegatAttaque { get => _degatAttaque; set => _degatAttaque = value; }
         public int ArgentDansPartie { get => _argentDansPartie; set => _argentDansPartie = value; }
         public int ArgentTotal { get => _argentTotal; set => _argentTotal = value; }
-        public int NbEnnemiTuerPartie { get => _nbEnnemiTuerPartie; set => _nbEnnemiTuerPartie = value; }
         public int NbEnnemiTuerTotal { get => _nbEnnemiTuerTotal; set => _nbEnnemiTuerTotal = value; }
         public ItemTemporaire? ItemTemporaire { get => _itemTemporaire; set => _itemTemporaire = value; }
         public List<ItemPermanent>? LesItemsPermanents { get => _lesItemsPermanents; set => _lesItemsPermanents = value; }
@@ -39,7 +37,6 @@ namespace Whack_Cash
             DegatAttaque = 1;
             ArgentDansPartie = 0;
             ArgentTotal = 0;
-            NbEnnemiTuerPartie = 0;
             NbEnnemiTuerTotal = 0;
             LesItemsPermanents = new List<ItemPermanent>();
             Nom = "";

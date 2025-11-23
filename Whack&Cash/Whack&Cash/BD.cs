@@ -307,5 +307,53 @@ namespace Whack_Cash
 
             return lesJoueurs;
         }
+
+        public static List<(string, int)> ChargerLeaderboardArgent()
+        {
+            string chargerJoueurs = "select nom, argent_total FROM utilisateurs ORDER BY argent_total DESC LIMIT 3";
+
+            MySqlConnection laConnection = new MySqlConnection(INFO_CONNEXION);
+
+            laConnection.Open();
+
+            MySqlCommand laCommande = new MySqlCommand(chargerJoueurs, laConnection);
+
+            MySqlDataReader leLecteur = laCommande.ExecuteReader();
+
+            List<(string, int)> lesJoueurs = new List<(string, int)>();
+
+            while (leLecteur.Read())
+                lesJoueurs.Add((leLecteur.GetString("nom"), leLecteur.GetInt32("argent_total")));
+
+            leLecteur.Close();
+
+            laConnection.Close();
+
+            return lesJoueurs;
+        }
+
+        public static List<(string, int)> ChargerLeaderboardEnnemi()
+        {
+            string chargerJoueurs = "select nom, ennemis_totaux_tues FROM utilisateurs ORDER BY ennemis_totaux_tues DESC LIMIT 3";
+
+            MySqlConnection laConnection = new MySqlConnection(INFO_CONNEXION);
+
+            laConnection.Open();
+
+            MySqlCommand laCommande = new MySqlCommand(chargerJoueurs, laConnection);
+
+            MySqlDataReader leLecteur = laCommande.ExecuteReader();
+
+            List<(string, int)> lesJoueurs = new List<(string, int)>();
+
+            while (leLecteur.Read())
+                lesJoueurs.Add((leLecteur.GetString("nom"), leLecteur.GetInt32("ennemis_totaux_tues")));
+
+            leLecteur.Close();
+
+            laConnection.Close();
+
+            return lesJoueurs;
+        }
     }
 }

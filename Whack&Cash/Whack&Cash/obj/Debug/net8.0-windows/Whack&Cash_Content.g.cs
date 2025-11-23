@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg_inscription.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg_leaderboard.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_anime.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_connexion.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_fantaisie.png")]

@@ -7,8 +7,20 @@
         mc:Ignorable="d"
         Title="FenetreLeaderboard" Height="450" Width="800"
         KeyDown="Window_KeyDown"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
     <Grid>
-        <TextBlock TextWrapping="Wrap" Margin="0,118,-115,204" FontSize="48" FontWeight="Bold"><Run Language="fr-ca" Text="Vous êtes rentré dans Leaderboard"/></TextBlock>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/bg_leaderboard.png"/>
+        </Grid.Background>
+        <TextBlock TextWrapping="Wrap" FontSize="28" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,101,0,270" Foreground="#FFF7F7F7"><Run Text="Argent total"/><LineBreak/><Run/></TextBlock>
+        <TextBlock TextWrapping="Wrap" FontSize="28" FontWeight="Bold" HorizontalAlignment="Left" Margin="66,101,0,273" Foreground="#FFF7F7F7"><Run Text="Nombre ennemi tués"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="_3_nbEnnemi" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="66,291,0,82" Foreground="#FFF7F7F7" Text=""/>
+        <TextBlock x:Name="_2_nbEnnemi" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="66,217,0,157" Foreground="#FFF7F7F7"><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="_1_nbEnnemi" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="66,150,0,224" Foreground="#FFF7F7F7" Text=""/>
+        <TextBlock x:Name="_3_nbArgent" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,291,0,82" Foreground="#FFF7F7F7" Text=""/>
+        <TextBlock x:Name="_2_nbArgent" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,217,0,157" Foreground="#FFF7F7F7"><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="_1_nbArgent" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,147,0,227" Foreground="#FFF7F7F7" Text=""/>
+
     </Grid>
 </Window>

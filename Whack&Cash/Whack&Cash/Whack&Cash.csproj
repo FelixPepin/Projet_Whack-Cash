@@ -15,6 +15,7 @@
     <None Remove="Images\background.jpg" />
     <None Remove="Images\bb8.png" />
     <None Remove="Images\bg_inscription.png" />
+    <None Remove="Images\bg_leaderboard.png" />
     <None Remove="Images\BJ.png" />
     <None Remove="Images\bobba.png" />
     <None Remove="Images\boutique.png" />
@@ -73,6 +74,9 @@
 
   <ItemGroup>
     <Content Include="Images\bg_inscription.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bg_leaderboard.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_anime.png">

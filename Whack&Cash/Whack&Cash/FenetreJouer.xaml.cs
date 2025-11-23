@@ -140,16 +140,17 @@ namespace Whack_Cash
 
             if (lesEnnemis[numEnnemi].PtsVie <= 0 & lesEnnemis.Count != (numEnnemi + 1))
             {
-                LeJoueur.NbEnnemiTuerPartie++;
+                LeJoueur.NbEnnemiTuerTotal++;
                 LeJoueur.ArgentDansPartie += lesEnnemis[numEnnemi].Recompense;
+                leJoueur.ArgentTotal += lesEnnemis[numEnnemi].Recompense;
                 txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
                 numEnnemi++;
                 FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
             }
             else if (lesEnnemis[numEnnemi].PtsVie <= 0 & lesEnnemis.Count == numEnnemi + 1)
             {
-                LeJoueur.NbEnnemiTuerTotal += LeJoueur.NbEnnemiTuerPartie;
-                LeJoueur.ArgentTotal += LeJoueur.ArgentDansPartie;
+                LeJoueur.NbEnnemiTuerTotal += LeJoueur.NbEnnemiTuerTotal;
+                leJoueur.ArgentTotal += lesEnnemis[numEnnemi].Recompense;
                 MessageBoxResult resultat = MessageBox.Show("Vous avez terminer le jeu !\n Oui = Retour au menu" +
                    "\n Non = Retour au desktop", "Fin De Partie", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (resultat == MessageBoxResult.Yes)

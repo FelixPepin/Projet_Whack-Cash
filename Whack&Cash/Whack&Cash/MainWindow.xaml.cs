@@ -62,7 +62,10 @@ namespace Whack_Cash
         private void btn_leaderboard_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard();
+            bool connexion = false;
+            if (LeJoueur is not null)
+                connexion = true;
+            FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard(connexion);
             fenetreLeaderboard.ShowDialog();
             this.Show();
         }
