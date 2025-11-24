@@ -180,3 +180,9 @@ C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\bg_inscription.png
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_inscription.png
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\bg_leaderboard.png
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Sound\Anime.wav
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Sound\death.wav
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Sound\degat.wav
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Sound\Fantaisie.wav
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Sound\Gaming.wav
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Sound\Star Wars.wav

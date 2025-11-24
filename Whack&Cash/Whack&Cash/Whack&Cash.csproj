@@ -70,6 +70,12 @@
     <None Remove="Images\terrorist_cs2.png" />
     <None Remove="Images\univers_bg.png" />
     <None Remove="Images\yoda.png" />
+    <None Remove="Sound\Anime.wav" />
+    <None Remove="Sound\death.wav" />
+    <None Remove="Sound\degat.wav" />
+    <None Remove="Sound\Fantaisie.wav" />
+    <None Remove="Sound\Gaming.wav" />
+    <None Remove="Sound\Star Wars.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -254,6 +260,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\yoda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Anime.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\death.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\degat.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Fantaisie.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Gaming.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Star Wars.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

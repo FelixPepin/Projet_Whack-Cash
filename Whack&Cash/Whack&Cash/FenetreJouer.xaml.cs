@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,10 +20,13 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreJouer : Window
     {
+        private SoundPlayer _musiqueJeu = new SoundPlayer();
         private int numEnnemi = 0;
         private List<Ennemi> lesEnnemis = new List<Ennemi>();
         private Joueur leJoueur = new Joueur();
         private string _univers;
+        private int _compteurClic;
+        private MediaPlayer _sfx = new MediaPlayer();
 
         internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
 
@@ -94,6 +98,8 @@ namespace Whack_Cash
                     lesEnnemis[numEnnemi].PtsVie = LeJoueur.EnnemiEnCours.PtsVie;
                     FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
                     txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
+                    _musiqueJeu = new SoundPlayer($"Sound/{LeJoueur.UniversEnCours}.wav");
+                    _musiqueJeu.PlayLooping();
 
                 }
                 else if (resultat == MessageBoxResult.No)
@@ -137,9 +143,19 @@ namespace Whack_Cash
             barreDeVie.Value -= LeJoueur.DegatAttaque;
             txtVie.Text = barreDeVie.Value + " / " + barreDeVie.Maximum;
             lesEnnemis[numEnnemi].PtsVie -= LeJoueur.DegatAttaque;
+            _compteurClic += 1;
+
+            if (_compteurClic % 10 == 0)
+            {
+                _sfx.Open(new Uri("Sound/degat.wav", UriKind.Relative));
+                _sfx.Play();
+                ShakerImage();
+            }
 
             if (lesEnnemis[numEnnemi].PtsVie <= 0 & lesEnnemis.Count != (numEnnemi + 1))
             {
+                _sfx.Open(new Uri("Sound/death.wav", UriKind.Relative));
+                _sfx.Play();
                 LeJoueur.NbEnnemiTuerTotal++;
                 LeJoueur.ArgentDansPartie += lesEnnemis[numEnnemi].Recompense;
                 leJoueur.ArgentTotal += lesEnnemis[numEnnemi].Recompense;
@@ -194,15 +210,34 @@ namespace Whack_Cash
         }
         private void CommencerUnePartieDuDebut()
         {
+            _musiqueJeu = new SoundPlayer($"Sound/{_univers}.wav");
+            _musiqueJeu.PlayLooping();
             lesEnnemis = BD.ChargerLesEnnemi(_univers);
             FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
         }
         private void FenetreJouer_Closed(object sender, EventArgs e)
         {
+            _musiqueJeu.Stop();
             if (LeJoueur.Est_connecte)
             {
                 BD.SauvegarderUtilisateur(LeJoueur, lesEnnemis[numEnnemi], _univers);
             }
+        }
+
+        private async void ShakerImage()
+        {
+            int amp = 3;
+            int rapidite = 30;
+
+            for (int i = 0; i < 3; i++)
+            {
+                imageShaker.X = amp;
+                await Task.Delay(rapidite);
+                imageShaker.X = -amp;
+                await Task.Delay(rapidite);
+            }
+
+            imageShaker.X = 0;
         }
     }
 }

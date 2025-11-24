@@ -68,5 +68,11 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/terrorist_cs2.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/univers_bg.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/yoda.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/anime.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/death.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/degat.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/fantaisie.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/gaming.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/star%20wars.wav")]
 
 
