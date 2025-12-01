@@ -16,6 +16,7 @@
     <None Remove="Images\bb8.png" />
     <None Remove="Images\bg_inscription.png" />
     <None Remove="Images\bg_leaderboard.png" />
+    <None Remove="Images\bg_tuto.png" />
     <None Remove="Images\BJ.png" />
     <None Remove="Images\bobba.png" />
     <None Remove="Images\boutique.png" />
@@ -76,6 +77,7 @@
     <None Remove="Sound\Fantaisie.wav" />
     <None Remove="Sound\Gaming.wav" />
     <None Remove="Sound\Star Wars.wav" />
+    <None Remove="Video\videoplayback.mp4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -83,6 +85,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\bg_leaderboard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bg_tuto.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\btn_anime.png">
@@ -278,6 +283,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sound\Star Wars.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Video\videoplayback.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

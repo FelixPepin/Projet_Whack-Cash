@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\App.xaml
-8-1538614739
-66409972480
-16-1871960231
+9970098690
+682019768942
+17-318719306
 201490767065
-FenetreBoutique.xaml;FenetreConnexion.xaml;FenetreCredits.xaml;FenetreInscription.xaml;FenetreJouer.xaml;FenetreLeaderboard.xaml;FenetreUnivers.xaml;MainWindow.xaml;
+FenetreBoutique.xaml;FenetreConnexion.xaml;FenetreCredits.xaml;FenetreInscription.xaml;FenetreJouer.xaml;FenetreLeaderboard.xaml;FenetreTutoriel.xaml;FenetreUnivers.xaml;MainWindow.xaml;
 
 False
 

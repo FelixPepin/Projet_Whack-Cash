@@ -10,6 +10,7 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg_inscription.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg_leaderboard.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg_tuto.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_anime.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_connexion.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_fantaisie.png")]
@@ -74,5 +75,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/fantaisie.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/gaming.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/star%20wars.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("video/videoplayback.mp4")]
 
 

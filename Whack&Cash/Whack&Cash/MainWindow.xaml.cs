@@ -93,5 +93,13 @@ namespace Whack_Cash
             fenetreInscription.ShowDialog();
             this.Show();
         }
+
+        private void btn_tutoriel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            FenetreTutoriel fenetreTutoriel = new FenetreTutoriel();
+            fenetreTutoriel.ShowDialog();
+            this.Show();
+        }
     }
 }

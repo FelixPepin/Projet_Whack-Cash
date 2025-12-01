@@ -20,6 +20,9 @@
     <Compile Update="FenetreLeaderboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="FenetreTutoriel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="FenetreUnivers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
