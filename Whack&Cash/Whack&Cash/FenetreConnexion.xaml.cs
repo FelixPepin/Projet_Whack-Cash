@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -93,6 +94,20 @@ namespace Whack_Cash
                 this.Close();
             }
 
+        }
+
+        private void btn_entre(object sender, EventArgs e)
+        {
+            img_btn_connexion.Effect = new DropShadowEffect
+            {
+                Color = Colors.DeepSkyBlue,
+                BlurRadius = 15,
+                ShadowDepth = 0
+            };
+        }
+        private void btn_quitte(object sender, EventArgs e)
+        {
+            img_btn_connexion.Effect = null;
         }
     }
 }

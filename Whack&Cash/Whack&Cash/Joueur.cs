@@ -98,6 +98,12 @@ namespace Whack_Cash
             LesItemsPermanents.Add(item);
         }
 
+        public void SupprimerItemTemporaire()
+        {
+            DegatAttaque = DegatAttaque - ItemTemporaire.DegatSup;
+            ItemTemporaire = null;
+        }
+
         public void AjouterItemTemporaireSauvegarder(ItemTemporaire item)
         {
             DegatAttaque = DegatAttaque + item.DegatSup;

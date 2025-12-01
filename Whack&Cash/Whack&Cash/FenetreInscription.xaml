@@ -15,9 +15,9 @@
         <Label Content="Nom :" HorizontalAlignment="Left" Height="27" Margin="234,126,0,0" VerticalAlignment="Top" Width="53" Foreground="White"/>
         <Label Content="Mot de passe :" HorizontalAlignment="Left" Height="39" Margin="234,188,0,0" VerticalAlignment="Top" Width="238" Foreground="White"/>
         <Label Content="Confirmation mot de passe :" HorizontalAlignment="Left" Height="39" Margin="234,252,0,0" VerticalAlignment="Top" Width="238" Foreground="White"/>
-        <Image Source="/Images/btn_inscription.png" Stretch="Fill" Height="296" VerticalAlignment="Top" Margin="196,227,196,0" />
+        <Image x:Name="img_btn_inscription" Source="/Images/btn_inscription.png" Stretch="Fill" Height="296" VerticalAlignment="Top" Margin="196,227,196,0" />
         <Button x:Name="btn_inscription" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="332" Height="70" OverridesDefaultStyle="True" 
-        Background="Transparent" Focusable="False" Click="btn_inscription_Click" >
+        Background="Transparent" Focusable="False" Click="btn_inscription_Click" MouseEnter="btn_entre" MouseLeave="btn_quitte">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}">

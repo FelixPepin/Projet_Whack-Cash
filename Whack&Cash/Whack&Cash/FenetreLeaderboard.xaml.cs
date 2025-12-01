@@ -20,10 +20,8 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreLeaderboard : Window
     {
-        private bool _connexion;
-        public FenetreLeaderboard(bool connexion)
+        public FenetreLeaderboard()
         {
-            _connexion = connexion;
             InitializeComponent();
             this.Focus();
         }
@@ -39,17 +37,8 @@ namespace Whack_Cash
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            if (!_connexion)
-            {
-                MessageBox.Show("Vous ne pouvez pas voir le leaderboard si vous n'êtes pas connecté", "Erreur de connexion",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-                DialogResult = false;
-            }
-            else
-            {
-                LeaderboardArgent();
-                LeaderboardEnnemi();
-            }
+            LeaderboardArgent();
+            LeaderboardEnnemi();
         }
 
         private void LeaderboardArgent()
@@ -63,6 +52,7 @@ namespace Whack_Cash
 
         private void LeaderboardEnnemi()
         {
+            // Try catch ici, recherche catch all app.cs
             List<(string, int)> topEnnemi = BD.ChargerLeaderboardEnnemi();
 
             _1_nbEnnemi.Text = $"1. {topEnnemi[0].Item1} {topEnnemi[0].Item2} ennemis tués";

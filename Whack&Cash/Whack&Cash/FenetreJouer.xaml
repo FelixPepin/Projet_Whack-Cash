@@ -13,9 +13,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/background.jpg"/>
         </Grid.Background>
-        <Image Source="/Images/btn_attaque.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="268,323,326,0" />
+        <Image x:Name="img_btn_attaque" Source="/Images/btn_attaque.png" Stretch="Fill" Height="122" VerticalAlignment="Top" Margin="268,323,326,0" />
         <Button x:Name="btn_attaquer" HorizontalAlignment="Left" Margin="286,365,0,0" VerticalAlignment="Top" Width="163" Height="42" Click="btn_attaquer_Click" OverridesDefaultStyle="True" 
-                Background="Transparent" Focusable="False">
+                Background="Transparent" Focusable="False" MouseEnter="btn_entre" MouseLeave="btn_quitte">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}">

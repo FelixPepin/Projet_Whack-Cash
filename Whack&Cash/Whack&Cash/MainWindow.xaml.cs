@@ -26,6 +26,8 @@ namespace Whack_Cash
         public MainWindow()
         {
             InitializeComponent();
+            btn_leaderboard.IsEnabled = false;
+
         }
 
         private void btn_jouer_Click(object sender, RoutedEventArgs e)
@@ -46,6 +48,10 @@ namespace Whack_Cash
             FenetreConnexion fenetreConnexion = new FenetreConnexion();
             fenetreConnexion.ShowDialog();
             LeJoueur = FenetreConnexion.LeJoueurConnecte;
+
+            if (LeJoueur is not null)
+                btn_leaderboard.IsEnabled = true;
+
             this.Show();
 
         }
@@ -62,10 +68,7 @@ namespace Whack_Cash
         private void btn_leaderboard_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            bool connexion = false;
-            if (LeJoueur is not null)
-                connexion = true;
-            FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard(connexion);
+            FenetreLeaderboard fenetreLeaderboard = new FenetreLeaderboard();
             fenetreLeaderboard.ShowDialog();
             this.Show();
         }

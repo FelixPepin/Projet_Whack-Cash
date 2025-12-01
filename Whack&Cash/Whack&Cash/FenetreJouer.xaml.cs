@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -144,6 +145,16 @@ namespace Whack_Cash
             txtVie.Text = barreDeVie.Value + " / " + barreDeVie.Maximum;
             lesEnnemis[numEnnemi].PtsVie -= LeJoueur.DegatAttaque;
             _compteurClic += 1;
+            if (LeJoueur.ItemTemporaire is not null)
+            {
+                LeJoueur.ItemTemporaire.NbDeTours--;
+                if (LeJoueur.ItemTemporaire.NbDeTours == 0)
+                {
+                    MessageBox.Show("Item temporaire supprimer");
+                    LeJoueur.SupprimerItemTemporaire();
+                }
+            }
+            
 
             if (_compteurClic % 10 == 0)
             {
@@ -238,6 +249,20 @@ namespace Whack_Cash
             }
 
             imageShaker.X = 0;
+        }
+
+        private void btn_entre(object sender, EventArgs e)
+        {
+            img_btn_attaque.Effect = new DropShadowEffect
+            {
+                Color = Colors.Red,
+                BlurRadius = 15,
+                ShadowDepth = 0
+            };
+        }
+        private void btn_quitte(object sender, EventArgs e)
+        {
+            img_btn_attaque.Effect = null;
         }
     }
 }

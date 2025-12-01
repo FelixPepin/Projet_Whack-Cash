@@ -71,5 +71,14 @@ namespace Whack_Cash
             }
 
         }
+
+        private void btn_entre(object sender, EventArgs e)
+        {
+            img_btn_inscription.Opacity = 0.5;
+        }
+        private void btn_quitte(object sender, EventArgs e)
+        {
+            img_btn_inscription.Opacity = 1;
+        }
     }
 }
