@@ -19,6 +19,9 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreCredits : Window
     {
+        /// <summary>
+        /// Initialise la fenêtre crédit
+        /// </summary>
         public FenetreCredits()
         {
             InitializeComponent();

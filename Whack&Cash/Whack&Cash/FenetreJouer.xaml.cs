@@ -30,7 +30,11 @@ namespace Whack_Cash
         private MediaPlayer _sfx = new MediaPlayer();
 
         internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
-
+        /// <summary>
+        /// Initialise la fenêtre joueur
+        /// </summary>
+        /// <param name="univers">L'univers des ennemis à charger</param>
+        /// <param name="nomJoueur">Le nom du joueur qui joue</param>
         public FenetreJouer(string univers, string nomJoueur)
         {
             InitializeComponent();
@@ -150,7 +154,6 @@ namespace Whack_Cash
                 LeJoueur.ItemTemporaire.NbDeTours--;
                 if (LeJoueur.ItemTemporaire.NbDeTours == 0)
                 {
-                    MessageBox.Show("Item temporaire supprimer");
                     LeJoueur.SupprimerItemTemporaire();
                 }
             }
@@ -219,6 +222,10 @@ namespace Whack_Cash
 
 
         }
+        /// <summary>
+        /// Lance une nouvellep partie si aucun utilisateur est connecter ou 
+        /// qu'il a choisi de faire une nouvelle partie.
+        /// </summary>
         private void CommencerUnePartieDuDebut()
         {
             _musiqueJeu = new SoundPlayer($"Sound/{_univers}.wav");
@@ -226,6 +233,9 @@ namespace Whack_Cash
             lesEnnemis = BD.ChargerLesEnnemi(_univers);
             FaireApparaitreEnnemi(lesEnnemis[numEnnemi]);
         }
+        /// <summary>
+        /// Permet de sauvegarder la progression du joueur quand on ferme la fenêtre.
+        /// </summary>
         private void FenetreJouer_Closed(object sender, EventArgs e)
         {
             _musiqueJeu.Stop();
@@ -234,7 +244,9 @@ namespace Whack_Cash
                 BD.SauvegarderUtilisateur(LeJoueur, lesEnnemis[numEnnemi], _univers);
             }
         }
-
+        /// <summary>
+        /// Permet de faire trembler l'ennemi à chaque 10 coups.
+        /// </summary>
         private async void ShakerImage()
         {
             int amp = 3;
@@ -250,7 +262,11 @@ namespace Whack_Cash
 
             imageShaker.X = 0;
         }
-
+        /// <summary>
+        /// Permet de faire apparaître une aura rouge autour du bouton quand on l'hover.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_entre(object sender, EventArgs e)
         {
             img_btn_attaque.Effect = new DropShadowEffect
@@ -260,6 +276,11 @@ namespace Whack_Cash
                 ShadowDepth = 0
             };
         }
+        /// <summary>
+        /// Permet d'enlever l'aura rouge autour du bouton quand on ne l'hover plus.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_quitte(object sender, EventArgs e)
         {
             img_btn_attaque.Effect = null;

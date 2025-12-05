@@ -21,16 +21,18 @@ namespace Whack_Cash
     {
         private static List<(string, string)> _lesInfosJoueurs;
         public static List<(string, string)> LesInfosJoueurs { get => _lesInfosJoueurs; set => _lesInfosJoueurs = value; }
-
-
+        /// <summary>
+        /// Initialise la fenêtre inscription.
+        /// </summary>
         public FenetreInscription()
         {
             InitializeComponent();
             this.Focus();
             LesInfosJoueurs = new List<(string, string)>();
         }
-
-
+        /// <summary>
+        /// Permet de retourner au menu principale en cliquant sur esc.
+        /// </summary>
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
@@ -38,7 +40,10 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Permet à un joueur de s'inscrire si le nom et le mot de passe corresponde au
+        /// restriction.
+        /// </summary>
         private void btn_inscription_Click(object sender, RoutedEventArgs e)
         {
             string nom = txt_nom.Text;
@@ -71,11 +76,14 @@ namespace Whack_Cash
             }
 
         }
-
+        /// <summary>
+        /// Aggrandit l'image quand on hover le bouton
+        /// </summary>
         private void btn_entre(object sender, EventArgs e)
         {
             img_btn_inscription.Opacity = 0.5;
         }
+        // Enlève l'aggrandisement de l'image quand on hover pu le bouton.
         private void btn_quitte(object sender, EventArgs e)
         {
             img_btn_inscription.Opacity = 1;

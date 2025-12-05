@@ -53,7 +53,7 @@ namespace Whack_Cash {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Whack&Cash;V1.0.0.0;component/fenetretutoriel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Whack&Cash;component/fenetretutoriel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\FenetreTutoriel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

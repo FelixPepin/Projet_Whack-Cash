@@ -20,6 +20,9 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreLeaderboard : Window
     {
+        /// <summary>
+        /// Initialise la fenêtre leaderboard.
+        /// </summary>
         public FenetreLeaderboard()
         {
             InitializeComponent();
@@ -35,12 +38,17 @@ namespace Whack_Cash
                 this.Close();
             }
         }
+        /// <summary>
+        /// Permet de charger les leaderboard lorsque la fenêtre se load.
+        /// </summary>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             LeaderboardArgent();
             LeaderboardEnnemi();
         }
-
+        /// <summary>
+        /// Permet d'afficher le leaderboard pour l'argent total accumulé.
+        /// </summary>
         private void LeaderboardArgent()
         {
             List<(string, int)> topArgent = BD.ChargerLeaderboardArgent();
@@ -49,7 +57,9 @@ namespace Whack_Cash
             _2_nbArgent.Text = $"2. {topArgent[1].Item1} {topArgent[1].Item2} $";
             _3_nbArgent.Text = $"3. {topArgent[2].Item1} {topArgent[2].Item2} $";
         }
-
+        /// <summary>
+        /// Permet d'afficher le leaderboard pour le nombre ennemi total tués.
+        /// </summary>
         private void LeaderboardEnnemi()
         {
             // Try catch ici, recherche catch all app.cs

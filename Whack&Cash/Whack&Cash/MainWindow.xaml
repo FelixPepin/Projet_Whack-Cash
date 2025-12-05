@@ -10,7 +10,7 @@
         WindowStartupLocation="CenterScreen">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="449">
         <StackPanel Margin="0,-22,0,0">
-            <TextBlock TextWrapping="Wrap" Text="Whack &amp; Cash" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30" Foreground="#FFF7F7F7"/>
+            <TextBlock TextWrapping="Wrap" Text="Whack &amp; Cash" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30" Foreground="White"/>
             <Button x:Name="btn_jouer" Content="Jouer" FontSize="20" Background="#FF0031F7" Foreground="White" Margin="0,0,0,10" Width="250" Height="40" Click="btn_jouer_Click"/>
             <Button x:Name="btn_univers" Content="Univers" FontSize="20" Background="#FF0031F7" Foreground="White" Margin="0,0,0,10" Height="40" Click="btn_univers_Click"/>
             <Button x:Name="btn_leaderboard" Content="Leaderboard" FontSize="20" Background="#FF0031F7" Foreground="White" Margin="0,0,0,10" Height="40" Click="btn_leaderboard_Click"/>

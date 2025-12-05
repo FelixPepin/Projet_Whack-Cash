@@ -23,6 +23,9 @@ namespace Whack_Cash
 
         public string Univers { get => _univers; set => _univers = value; }
 
+        /// <summary>
+        /// Initialise la fenêtre univers.
+        /// </summary>
         public FenetreUnivers()
         {
             InitializeComponent();
@@ -38,7 +41,9 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Permet de sélectionner l'univers fantaisie.
+        /// </summary>
         private void btn_fantaisie_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Fantaisie ?"
@@ -49,7 +54,9 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Permet de sélectionner l'univers Star Wars.
+        /// </summary>
         private void btn_star_wars_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Star Wars ?"
@@ -60,7 +67,9 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Permet de sélectionner l'univers Gaming.
+        /// </summary>
         private void btn_gaming_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Gaming ?"
@@ -71,7 +80,9 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Permet de sélectionner l'univers anime.
+        /// </summary>
         private void btn_anime_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult resultat = MessageBox.Show("Confirmez-vous le choix de l'univers Anime ?"
@@ -82,7 +93,9 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Lorsqu'on clique sur se bouton, on retourne au menu principale.
+        /// </summary>
         private void btn_retour_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

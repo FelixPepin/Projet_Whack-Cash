@@ -43,6 +43,11 @@ namespace Whack_Cash
 
             return lesItems;
         }
+        /// <summary>
+        /// Permet de charger un item temporaire précis de la BD grâce à son id.
+        /// </summary>
+        /// <param name="id">L'id de l'item temporaire</param>
+        /// <returns>L'item temporaire</returns>
         public static ItemTemporaire ChargerItemTemporaire(int id)
         {
             string chargerItemTempo = "select * FROM itemtemporaire WHERE id = @id";
@@ -100,6 +105,11 @@ namespace Whack_Cash
 
             return lesItems;
         }
+        /// <summary>
+        /// Permet de charger un item permanent de la BD grâce à son id.
+        /// </summary>
+        /// <param name="id">Id de l'item permanent à charger.</param>
+        /// <returns>L'item permanent</returns>
         public static ItemPermanent ChargerItemPermanent(int id)
         {
             string chargerItemTempo = "select * FROM itempermanent WHERE id = @id";
@@ -127,6 +137,11 @@ namespace Whack_Cash
 
             return item;
         }
+        /// <summary>
+        /// Permet de charger tous les ennemis d'un univers de la BD.
+        /// </summary>
+        /// <param name="univers">L'univers des ennemis à charger</param>
+        /// <returns>La liste d'ennemi</returns>
         public static List<Ennemi> ChargerLesEnnemi(string univers)
         {
             string chargerEnnemi = "select * FROM ennemie WHERE univers = @univers";
@@ -158,7 +173,11 @@ namespace Whack_Cash
 
             return lesEnnemis;
         }
-
+        /// <summary>
+        /// Permet de charger un ennemi de la BD grâce à son id.
+        /// </summary>
+        /// <param name="id">L'id de l'ennemi à charger.</param>
+        /// <returns>L'ennemi</returns>
         public static Ennemi ChargerEnnemiEnCours(int id)
         {
             string chargerEnnemi = "select * FROM ennemie WHERE id = @id";
@@ -188,6 +207,11 @@ namespace Whack_Cash
 
             return ennemi;
         }
+        /// <summary>
+        /// Permet de créer un utilisateur et l'insérer dans la BD.
+        /// </summary>
+        /// <param name="nom">Le nom de l'utilisateur à créer</param>
+        /// <param name="mdp">Le mdp de l'utilisateur.</param>
         public static void CreerUtilisateur(string nom, string mdp)
         {
             string creerUtilisateur = "insert into utilisateurs (nom, mot_de_passe) values (@nom, @mdp)";
@@ -207,6 +231,12 @@ namespace Whack_Cash
 
             laConnection.Close();
         }
+        /// <summary>
+        /// Permet de sauvegarder la progression du jeu de l'utilisateur dans la BD.
+        /// </summary>
+        /// <param name="leJoueur">Le joueur et ses données à sauvegarder dans la BD.</param>
+        /// <param name="ennemiEnCours">L'ennemi en cours à sauvegarder dans la BD.</param>
+        /// <param name="univers">L'univers à sauvegarder dans la BD.</param>
         public static void SauvegarderUtilisateur(Joueur leJoueur, Ennemi ennemiEnCours, string univers)
         {
             string sauvegarderUtilisateur = "update utilisateurs set ennemi_en_cours = @ennemi_en_cours, pv_ennemi_en_cours = @pv_ennemi_en_cours, " +
@@ -253,7 +283,11 @@ namespace Whack_Cash
 
             laConnection.Close();
         }
-
+        /// <summary>
+        /// Permet de charger la progression dans le jeu d'un utilisateur.
+        /// </summary>
+        /// <param name="nom">Le nom du joueur à charger.</param>
+        /// <returns>Le joueur charger avec sa progression.</returns>
         public static Joueur ChargerJoueur(string nom)
         {
             string chargerJoueur = "select * FROM utilisateurs WHERE nom = @nom";
@@ -283,7 +317,10 @@ namespace Whack_Cash
 
             return leJoueur;
         }
-
+        /// <summary>
+        /// Permet de charger les informations de tous les joueur.
+        /// </summary>
+        /// <returns>Retourne le nom et le mot de passe de tous les utilisateurs.</returns>
         public static List<(string, string)> ChargerInfoTousLesJoueurs()
         {
             string chargerJoueurs = "select nom, mot_de_passe FROM utilisateurs";
@@ -307,7 +344,10 @@ namespace Whack_Cash
 
             return lesJoueurs;
         }
-
+        /// <summary>
+        /// Permet de charger les 3 utilisateurs avec le plus d'argent accumulé.
+        /// </summary>
+        /// <returns>Retourne une liste de nom d'utilisateur et leurs argents accumulé.</returns>
         public static List<(string, int)> ChargerLeaderboardArgent()
         {
             string chargerJoueurs = "select nom, argent_total FROM utilisateurs ORDER BY argent_total DESC LIMIT 3";
@@ -331,6 +371,10 @@ namespace Whack_Cash
 
             return lesJoueurs;
         }
+        /// <summary>
+        /// Permet de charger les 3 utilisateurs avec le plus d'ennemi tués.
+        /// </summary>
+        /// <returns>Retoure une liste de nom d'utilisateur et le nombre d'ennemi tués,</returns>
 
         public static List<(string, int)> ChargerLeaderboardEnnemi()
         {

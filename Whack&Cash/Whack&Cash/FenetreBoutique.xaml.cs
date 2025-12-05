@@ -26,17 +26,32 @@ namespace Whack_Cash
 
         internal Joueur LeJoueur { get => leJoueur; set => leJoueur = value; }
 
+        /// <summary>
+        /// Initilalise la fenêtre boutique.
+        /// </summary>
         public FenetreBoutique()
         {
             InitializeComponent();
             ChargerListeItems();
+            this.Loaded += FenetreBoutique_Loaded;
         }
-
+        /// <summary>
+        /// Permet de retourner au jeu.
+        /// </summary>
         private void btn_retour_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Permet d'afficher le nombre d'argent qu'un utilisateur as
+        /// </summary>
+        private void FenetreBoutique_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
+        }
+        /// <summary>
+        /// Permet d'acheter un item.
+        /// </summary>
         private void btn_acheter_Click(object sender, RoutedEventArgs e)
         {
 
@@ -55,6 +70,7 @@ namespace Whack_Cash
                 }
                 else
                     LeJoueur.AjouterItemTemporaire(itemAAcheter);
+                txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
             }
             else if (lst_items.SelectedItem is ItemPermanent)
             {
@@ -72,7 +88,9 @@ namespace Whack_Cash
                             LeJoueur.AjouterItemPermanent(itemAAcheter);
             }
         }
-
+        /// <summary>
+        /// Permet de charger tous les items et de l'afficher dans un listbox.
+        /// </summary>
         private void ChargerListeItems()
         {
             if (lesItemsPermanents == null && lesItemsTemporaires == null)
@@ -89,27 +107,25 @@ namespace Whack_Cash
                 }
             }
         }
-
+        /// <summary>
+        /// Quand la sélection d'un item change, on affiche son prix, ses dégats 
+        /// supplémentaires, le type et le nombre de tours si l'item est temporaire.
+        /// </summary>
         private void lst_items_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lst_items.SelectedItem is ItemTemporaire itemTemp)
             {
-                MessageBox.Show(
-                    $"Nom : {itemTemp.Nom}\n" +
-                    $"Dégâts supplémentaires : {itemTemp.DegatSup}\n" +
-                    $"Nombre de tours : {itemTemp.NbDeTours}\n" +
-                    $"Prix : {itemTemp.Prix}$\n" +
-                    $"Type : {itemTemp.Type}",
-                    "Item temporaire");
+                txt_prix.Text = "Prix : " + itemTemp.Prix;
+                txt_degat.Text = "Dégâts : " + itemTemp.DegatSup;
+                txt_type.Text = "Type : " + itemTemp.Type;
+                txt_tour.Text = "Nb tours : " + itemTemp.NbDeTours;
             }
             else if (lst_items.SelectedItem is ItemPermanent itemPerm)
             {
-                MessageBox.Show(
-                    $"Nom : {itemPerm.Nom}\n" +
-                    $"Dégâts supplémentaires : {itemPerm.DegatSup}\n" +
-                    $"Prix : {itemPerm.Prix}$\n" +
-                    $"Type : {itemPerm.Type}",
-                    "Item permanent");
+                txt_prix.Text = "Prix : " + itemPerm.Prix;
+                txt_degat.Text = "Dégâts : " + itemPerm.DegatSup;
+                txt_type.Text = "Type : " + itemPerm.Type;
+                txt_tour.Text = "";
             }
         }
     }

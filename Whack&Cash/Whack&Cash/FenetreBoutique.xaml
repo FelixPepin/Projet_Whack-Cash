@@ -38,5 +38,10 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <TextBlock x:Name="txt_prix" FontSize="36" Foreground="White" HorizontalAlignment="Left" Height="58" Margin="21,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"><Run Text=""/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="txt_degat" FontSize="36" Foreground="White" HorizontalAlignment="Left" Height="58" Margin="21,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" Text=""/>
+        <TextBlock x:Name="txt_type" FontSize="36" Foreground="White" HorizontalAlignment="Left" Height="58" Margin="240,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304"><Run Text=""/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="txt_tour" FontSize="36" Foreground="White" HorizontalAlignment="Left" Height="58" Margin="240,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"><Run Text=""/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="txtArgent" Text="💰 0 $" FontSize="24" FontWeight="Bold" Foreground="Gold" Margin="662,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
 </Window>

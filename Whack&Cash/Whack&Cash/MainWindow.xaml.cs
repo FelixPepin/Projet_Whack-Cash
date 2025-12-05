@@ -22,14 +22,18 @@ namespace Whack_Cash
 
         public string Univers { get => _univers; set => _univers = value; }
         internal Joueur LeJoueur { get => _leJoueur; set => _leJoueur = value; }
-
+        /// <summary>
+        /// Permet d'initialiser le main window.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
             btn_leaderboard.IsEnabled = false;
 
         }
-
+        /// <summary>
+        /// Permet de lancer une partie
+        /// </summary>
         private void btn_jouer_Click(object sender, RoutedEventArgs e)
         {
             if (Univers == null)
@@ -41,7 +45,9 @@ namespace Whack_Cash
             fenetreJouer.Show();
             this.Close();
         }
-
+        /// <summary>
+        /// Permet d'ouvrir la fenêtre connexion.
+        /// </summary>
         private void btn_connexion_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -55,7 +61,9 @@ namespace Whack_Cash
             this.Show();
 
         }
-
+        /// <summary>
+        /// Permet d'ouvrir la fenêtre univers.
+        /// </summary>
         private void btn_univers_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -64,7 +72,9 @@ namespace Whack_Cash
             Univers = fenetreUnivers.Univers;
             this.Show();
         }
-
+        /// <summary>
+        /// Permet d'ouvrir la fenêtre leaderboard.
+        /// </summary>
         private void btn_leaderboard_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -72,7 +82,9 @@ namespace Whack_Cash
             fenetreLeaderboard.ShowDialog();
             this.Show();
         }
-
+        /// <summary>
+        /// Permet d'ouvrir la fenêtre crédits.
+        /// </summary>
         private void btn_credits_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -80,11 +92,16 @@ namespace Whack_Cash
             fenetreCredits.ShowDialog();
             this.Show();
         }
-
+        /// <summary>
+        /// Permet de fermer le jeu.
+        /// </summary>
         private void btn_quitter_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+        /// <summary>
+        /// Permet d'ouvrir la fenêtre inscription. 
+        /// </summary>
 
         private void btn_inscription_Click(object sender, RoutedEventArgs e)
         {
@@ -93,7 +110,9 @@ namespace Whack_Cash
             fenetreInscription.ShowDialog();
             this.Show();
         }
-
+        /// <summary>
+        /// Permet d'ouvrir la fenêtre tutoriel.
+        /// </summary>
         private void btn_tutoriel_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();

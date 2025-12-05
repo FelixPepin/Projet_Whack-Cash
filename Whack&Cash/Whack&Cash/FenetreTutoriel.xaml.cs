@@ -19,10 +19,17 @@ namespace Whack_Cash
     /// </summary>
     public partial class FenetreTutoriel : Window
     {
+        /// <summary>
+        /// Permet d'initialiser la fenêtre tutoriel.
+        /// </summary>
         public FenetreTutoriel()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Permet de retourner au menu principale lorsqu'on clique sur esc.
+        /// </summary>
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)

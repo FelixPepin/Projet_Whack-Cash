@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Whack_Cash
 {
+    /// <summary>
+    /// Représente un item permanent, contient son nom, ses dégâts supplémentaires, son type, son prix et son id.
+    /// </summary>
     internal class ItemPermanent
     {
         private int _id;
@@ -20,6 +23,13 @@ namespace Whack_Cash
         public string Type { get => _type; set => _type = value; }
         public int Id { get => _id; set => _id = value; }
 
+        /// <summary>
+        /// Initialise un nouvelle item permanent grâce au nom, ses dégâts supplémentaires, son prix et son id.
+        /// </summary>
+        /// <param name="nom">Nom de l'item</param>
+        /// <param name="degatSup">Les dégâts supplémentaires de l'item</param>
+        /// <param name="prix">Le prix de l'item</param>
+        /// <param name="id">L'id de l'item</param>
         public ItemPermanent(string nom, int degatSup, int prix, int id)
         {
             Nom = nom;
@@ -28,7 +38,10 @@ namespace Whack_Cash
             Type = "Permanent";
             Id = id;
         }
-
+        /// <summary>
+        /// ToString pour afficher les item permanent.
+        /// </summary>
+        /// <returns>Retourne la façon d'écrire l'item permanent.</returns>
         public override string ToString()
         {
             return string.Format(Nom);

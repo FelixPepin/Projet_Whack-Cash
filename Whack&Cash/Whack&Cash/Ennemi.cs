@@ -9,6 +9,10 @@ using System.Windows.Media.Imaging;
 
 namespace Whack_Cash
 {
+    /// <summary>
+    /// Représente un ennemi dans le jeu. Contient ses points de vie, son nom, 
+    /// le chemin vers son image, la récompense qu'il donne à sa mort et son id.
+    /// </summary>
     internal class Ennemi
     {
         private int _ptsVie;
@@ -23,6 +27,14 @@ namespace Whack_Cash
         public int Recompense { get => _recompense; set => _recompense = value; }
         public int Id { get => id; set => id = value; }
 
+        /// <summary>
+        /// Initialise un nouveau ennemi.
+        /// </summary>
+        /// <param name="ptsVie">Le nombre de points de vie de l'ennemi</param>
+        /// <param name="nom">Le nom de l'ennemi</param>
+        /// <param name="cheminVersImageEnnemi">Le chemin vers l'image de l'ennemi</param>
+        /// <param name="recompense">La récompense en argent de l'ennemi.</param>
+        /// <param name="id">L'id de l'ennemi.</param>
         public Ennemi(int ptsVie, string nom, string cheminVersImageEnnemi, int recompense, int id)
         {
             PtsVie = ptsVie;

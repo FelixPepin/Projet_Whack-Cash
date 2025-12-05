@@ -35,7 +35,9 @@ namespace Whack_Cash
         public static string Mdp { get => _mdp; set => _mdp = value; }
         public static List<(string, string)> LesInfosJoueurs { get => _lesInfosJoueurs; set => _lesInfosJoueurs = value; }
         internal static Joueur LeJoueurConnecte { get => leJoueurConnecte; set => leJoueurConnecte = value; }
-
+        /// <summary>
+        /// Initialise la fenêtre connexion.
+        /// </summary>
         public FenetreConnexion()
         {
             InitializeComponent();
@@ -55,9 +57,9 @@ namespace Whack_Cash
                 this.Close();
             }
         }
-
-        
-
+        /// <summary>
+        /// Permet à l'utilisateur de se connecter si le nom et le mot de passe correspond à un joueur sauvegardé.
+        /// </summary>
         private void btn_connexion_Click(object sender, RoutedEventArgs e)
         {
             Nom = txt_nom.Text;
@@ -95,7 +97,10 @@ namespace Whack_Cash
             }
 
         }
-
+        /// <summary>
+        /// Permet de faire en sorte que quand l'utilisateur entre sa souris sur le bouton, un 
+        /// aura bleu apparait autour de celui-ci.
+        /// </summary>
         private void btn_entre(object sender, EventArgs e)
         {
             img_btn_connexion.Effect = new DropShadowEffect
@@ -105,6 +110,12 @@ namespace Whack_Cash
                 ShadowDepth = 0
             };
         }
+        /// <summary>
+        /// Permet de faire en sorte que quand l'utilisateur quitte du bouton avec sa souris, on 
+        /// enlève l'aura bleu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_quitte(object sender, EventArgs e)
         {
             img_btn_connexion.Effect = null;
