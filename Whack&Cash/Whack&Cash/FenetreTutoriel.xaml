@@ -12,10 +12,20 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Images/bg_tuto.png"/>
         </Grid.Background>
-        <MediaElement HorizontalAlignment="Center" Height="318" Margin="0,61,0,0" VerticalAlignment="Top" Width="556" Source="Video/videoplayback.mp4" LoadedBehavior="Play"
+        <MediaElement HorizontalAlignment="Center" Height="275" Margin="0,61,0,0" VerticalAlignment="Top" Width="499" Source="Video/videoplayback.mp4" LoadedBehavior="Play"
                       UnloadedBehavior="Stop"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,3,0,0" TextWrapping="Wrap" Text="Tutoriel" VerticalAlignment="Top" Height="51" Width="157" Foreground="White"
                    FontSize="40" Background="Black" TextAlignment="Center"/>
-
+        <Image Source="/Images/btn_retour.png" Stretch="Fill" Height="180" VerticalAlignment="Top" Margin="284,296,284,0" />
+        <Button x:Name="btn_retour" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Height="53" OverridesDefaultStyle="True" 
+Background="Transparent" Focusable="False" Click="btn_retour_Click" Margin="308,359,0,0" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

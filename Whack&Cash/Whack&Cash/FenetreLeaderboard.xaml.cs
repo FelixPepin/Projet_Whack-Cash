@@ -70,5 +70,12 @@ namespace Whack_Cash
             _3_nbEnnemi.Text = $"3. {topEnnemi[2].Item1} {topEnnemi[2].Item2} ennemis tués";
 
         }
+        /// <summary>
+        /// Lorsqu'on clique sur se bouton, on retourne au menu principale.
+        /// </summary>
+        private void btn_retour_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -66,18 +66,7 @@ namespace Whack_Cash
         {
             if (e.Key == Key.Escape)
             {
-                MessageBoxResult resultat = MessageBox.Show("Voulez vous quitter cette partie ? \nOui = Retour au menu principal" +
-                    "\nNon = Continuer la partie \nAnnuler = Retour au desktop", "Menu Pause", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-                if (resultat == MessageBoxResult.Yes)
-                {
-                    MainWindow menuPrincipale = new MainWindow();
-                    menuPrincipale.Show();
-                    this.Close();
-                }
-                else if (resultat == MessageBoxResult.Cancel)
-                {
-                    this.Close();
-                }
+                MenuPause();
             }
         }
         /// <summary>
@@ -284,6 +273,33 @@ namespace Whack_Cash
         private void btn_quitte(object sender, EventArgs e)
         {
             img_btn_attaque.Effect = null;
+        }
+        /// <summary>
+        /// Permet d'afficher le menu pause lorsqu'on clique sur le bouton pause.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_pause_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPause();
+        }
+        /// <summary>
+        /// Affiche le menu pause du jeu.
+        /// </summary>
+        private void MenuPause()
+        {
+            MessageBoxResult resultat = MessageBox.Show("Voulez vous quitter cette partie ? \nOui = Retour au menu principal" +
+                    "\nNon = Continuer la partie \nAnnuler = Retour au desktop", "Menu Pause", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            if (resultat == MessageBoxResult.Yes)
+            {
+                MainWindow menuPrincipale = new MainWindow();
+                menuPrincipale.Show();
+                this.Close();
+            }
+            else if (resultat == MessageBoxResult.Cancel)
+            {
+                this.Close();
+            }
         }
     }
 }

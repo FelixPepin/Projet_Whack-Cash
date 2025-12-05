@@ -16,6 +16,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_fantaisie.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_gaming.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_inscription.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_pause.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/btn_star_wars.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/connexion_bg.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/kylo.png")]

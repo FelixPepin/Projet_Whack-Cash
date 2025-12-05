@@ -21,6 +21,16 @@
         <TextBlock x:Name="_3_nbArgent" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,291,0,82" Foreground="#FFF7F7F7" Text=""/>
         <TextBlock x:Name="_2_nbArgent" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,217,0,157" Foreground="#FFF7F7F7"><Run/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="_1_nbArgent" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="457,147,0,227" Foreground="#FFF7F7F7" Text=""/>
-
+        <Image Source="/Images/btn_retour.png" Stretch="Fill" Height="180" VerticalAlignment="Top" Margin="291,294,277,0" />
+        <Button x:Name="btn_retour" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170" Height="53" OverridesDefaultStyle="True" 
+Background="Transparent" Focusable="False" Click="btn_retour_Click" Margin="0,357,0,0" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

@@ -190,3 +190,4 @@ C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\obj\Debug\net8.0-windows\FenetreTutoriel.baml
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Video\videoplayback.mp4
 C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\bg_tuto.png
+C:\Users\felix\OneDrive - Cégep Garneau\Bureau\Projet\Projet\Projet_Whack-Cash\Whack&Cash\Whack&Cash\bin\Debug\net8.0-windows\Images\btn_pause.png

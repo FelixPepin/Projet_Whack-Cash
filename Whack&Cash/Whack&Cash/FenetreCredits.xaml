@@ -11,5 +11,16 @@
     <Grid>
         <TextBlock Background="Transparent" Foreground="White" Margin="20,43,10,300" Text="Ce jeu a été entièrement fait par :" FontSize="50"/>
         <TextBlock Background="Transparent" Foreground="White" Margin="282,172,249,171" Text="Félix Pépin" FontSize="50"/>
+        <Image Source="/Images/btn_retour.png" Stretch="Fill" Height="180" VerticalAlignment="Top" Margin="291,230,277,0" />
+        <Button x:Name="btn_retour" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170" Height="53" OverridesDefaultStyle="True" 
+Background="Transparent" Focusable="False" Click="btn_retour_Click" Margin="0,293,0,0" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

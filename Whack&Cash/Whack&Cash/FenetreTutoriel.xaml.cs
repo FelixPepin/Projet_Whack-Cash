@@ -29,13 +29,19 @@ namespace Whack_Cash
         /// <summary>
         /// Permet de retourner au menu principale lorsqu'on clique sur esc.
         /// </summary>
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
             {
                 this.Close();
             }
+        }
+        /// <summary>
+        /// Lorsqu'on clique sur se bouton, on retourne au menu principale.
+        /// </summary>
+        private void btn_retour_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
     }

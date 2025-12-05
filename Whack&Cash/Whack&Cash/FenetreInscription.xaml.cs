@@ -88,5 +88,12 @@ namespace Whack_Cash
         {
             img_btn_inscription.Opacity = 1;
         }
+        /// <summary>
+        /// Lorsqu'on clique sur se bouton, on retourne au menu principale.
+        /// </summary>
+        private void btn_retour_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
