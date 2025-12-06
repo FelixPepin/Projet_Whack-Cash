@@ -76,6 +76,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/fantaisie.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/gaming.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sound/star%20wars.wav")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("video/videoplayback.mp4")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("video/tutoriel.mp4")]
 
 

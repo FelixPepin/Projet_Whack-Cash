@@ -78,7 +78,8 @@
     <None Remove="Sound\Fantaisie.wav" />
     <None Remove="Sound\Gaming.wav" />
     <None Remove="Sound\Star Wars.wav" />
-    <None Remove="Video\videoplayback.mp4" />
+    <None Remove="Video\tutoriel.mp4" />
+    <None Remove="Video\tutoriel.wmv" />
   </ItemGroup>
 
   <ItemGroup>
@@ -289,7 +290,7 @@
     <Content Include="Sound\Star Wars.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Video\videoplayback.mp4">
+    <Content Include="Video\tutoriel.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using MySqlConnector;
 
 namespace Whack_Cash
@@ -12,7 +13,7 @@ namespace Whack_Cash
     /// </summary>
     internal static class BD
     {
-        private const string INFO_CONNEXION = "server=localhost;database=whack_cash;uid=root;pwd=";
+        private static readonly string INFO_CONNEXION = ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
         /// <summary>
         /// Permet de charger les items temporaire de la bd et retourne ceux-ci dans une liste d'item temporaire
         /// </summary>

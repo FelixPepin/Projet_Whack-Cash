@@ -69,8 +69,11 @@ namespace Whack_Cash
                         , "1 item temporaire max", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
                 else
+                {
                     LeJoueur.AjouterItemTemporaire(itemAAcheter);
-                txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
+                    MessageBox.Show($"Félicitations! Vous êtes l'heureux propriétaire de {itemAAcheter.Nom}", "Confirmation d'achat d'item.", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
+
             }
             else if (lst_items.SelectedItem is ItemPermanent)
             {
@@ -85,8 +88,12 @@ namespace Whack_Cash
                     MessageBox.Show("Vous possédez déjà cette item permanent"
                         , "Manque d'argent", MessageBoxButton.OK, MessageBoxImage.Warning);
                 else
-                            LeJoueur.AjouterItemPermanent(itemAAcheter);
+                {
+                    LeJoueur.AjouterItemPermanent(itemAAcheter);
+                    MessageBox.Show($"Félicitations! Vous êtes l'heureux propriétaire de {itemAAcheter.Nom}", "Confirmation d'achat d'item.", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                }
             }
+            txtArgent.Text = "💰 " + LeJoueur.ArgentDansPartie + " $";
         }
         /// <summary>
         /// Permet de charger tous les items et de l'afficher dans un listbox.
