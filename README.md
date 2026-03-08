@@ -1,4 +1,5 @@
 # Whack & Cash
+![Gameplay](Gameplay.png)
 ## Nature et objectif de Whack & Cash
 Whack & Cash est un projet de jeu de type clicker développé en C# avec WPF. Le jeu offre une expérience
 simple et amusante. Le joueur doit cliquer afin de faire des dégâts aux ennemis provenant d'univers multiples,
